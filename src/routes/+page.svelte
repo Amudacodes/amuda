@@ -49,7 +49,7 @@
 
     <div class="about">
         <div class="aboutAll all pt-20 text-center">
-            <h1 class="pb-3 text-[1.2rem] font-bold" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
+            <h1 class="pb-3 text-3xl font-bold" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;">About Me</h1>
             <p class="p-2 pb-11 font-semibold" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
@@ -73,7 +73,9 @@
     </div> -->
 
     <div class="whatido">
-        <h2 class="all text-center text-[1.3rem] font-bold pt-[2rem]">My field of specialization</h2>
+        <h2 class="all text-center text-3xl font-bold pt-[2rem]" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;">My field of specialization</h2>
         <div class="whatidoAll all flex flex-col">
             <div class="whati flex flex-col items-center m-8  p-[1rem] bg-[#0e0d0d]">
                 <img src="/1.png" alt="" class=" pt-5">
@@ -116,36 +118,36 @@
           -webkit-text-fill-color: transparent;">Skills</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <div class="p-4 bg-white shadow-lg rounded-lg">
-              <div class="flex items-center justify-center h-20 w-20 rounded-full ">
+              <div class="flex items-center justify-center h-20 w-20 rounded-full bg-[#E44D26] ">
                 <img src="html.png" alt="HTML icon" class="h-full w-full">
               </div>
               <h3 class="text-xl font-medium text-gray-800 my-4">HTML</h3>
               <p class="text-gray-600">Proficient in writing semantic and accessible HTML code.</p>
             </div>
             <div class="p-4 bg-white shadow-lg rounded-lg">
-              <div class="flex items-center justify-center h-20 w-20 rounded-full ">
+              <div class="flex items-center justify-center h-20 w-20 rounded-full bg-[#379AD6]">
                 <img src="css.png" alt="CSS icon" class="h-full w-full">
               </div>
               <h3 class="text-xl font-medium text-gray-800 my-4">CSS</h3>
               <p class="text-gray-600">Expertise in styling with CSS, including the use of TailwindCSS.</p>
             </div>
             <div class="p-4 bg-white shadow-lg rounded-lg">
-              <div class="flex items-center justify-center h-20 w-20 rounded-full bg-green-500">
-                <img src="javascript.png" alt="JavaScript icon" class="h-full w-full border-[50%]">
+              <div class="flex items-center justify-center h-20 w-20 rounded-full ">
+                <img src="js2.jpg" alt="JavaScript icon" class="h-full w-full svel">
               </div>
               <h3 class="text-xl font-medium text-gray-800 my-4">JavaScript</h3>
               <p class="text-gray-600">Proficient in writing vanilla JS and working with modern frameworks.</p>
             </div>
             <div class="p-4 bg-white shadow-lg rounded-lg">
-              <div class="flex items-center justify-center h-20 w-20 rounded-full bg-red-500">
-                <img src="svelte-icon.svg" alt="Sveltekit icon" class="h-full w-full">
+              <div class="flex items-center justify-center h-20 w-20 rounded-full ">
+                <img src="sv.png" alt="Sveltekit icon" class="h-full w-full svel">
               </div>
               <h3 class="text-xl font-medium text-gray-800 my-4">Sveltekit</h3>
               <p class="text-gray-600">Proficient in building web applications with Sveltekit.</p>
             </div>
             <div class="p-4 bg-white shadow-lg rounded-lg">
-              <div class="flex items-center justify-center h-20 w-20 rounded-full bg-purple-500">
-                <img src="tailwind-icon.svg" alt="TailwindCSS icon" class="h-12">
+              <div class="flex items-center justify-center h-20 w-20 p-1 rounded-full border-[.1rem]">
+                <img src="tcss.svg" alt="TailwindCSS icon" class="h-full w-full">
               </div>
               <h3 class="text-xl font-medium text-gray-800 my-4">TailwindCSS</h3>
               <p class="text-gray-600">Expertise in using TailwindCSS to create responsive and modern designs.</p>
@@ -202,6 +204,9 @@
         border: 2px solid #27AE60;
     }
 
+    .svel{
+        border-radius: 50%;
+    }
     
     .circle-container {
 
