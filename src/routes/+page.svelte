@@ -169,24 +169,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-
-
       <section class=" py-16">
         <div class="all mx-auto">
           <h2 class="text-3xl font-bold text-white mb-8">Some of My Work</h2>
@@ -231,13 +213,13 @@
                 <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
               </div>
             </div>
-            </section> -->
+            </section> 
       
       
       
 
 
-            <section class="all py-16">
+            <!-- <section class="all py-16">
               <div class="container mx-auto">
                 <h2 class="text-3xl font-bold text-white text-center mb-8" data-aos="fade-right">Some of My Work</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -291,7 +273,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
                       
 
@@ -447,9 +429,8 @@
 
 
 <script>
-  // import 'animate.css';
   import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
+  import 'aos/dist/aos.css';
+  AOS.init();
 
 </script>
