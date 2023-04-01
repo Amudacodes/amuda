@@ -164,62 +164,12 @@
         </div>
       </section>
        
-
-
-
-
-
-      <!-- <section class=" py-16">
-        <div class="all mx-auto">
-          <h2 class="text-3xl font-bold text-white mb-8">Some of My Work</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-left">
-              <img src="https://via.placeholder.com/500x300" alt="Project 1" class="w-full">
-              <div class="p-4">
-                <h3 class="text-lg font-bold text-white mb-2">Project 1</h3>
-                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
-              </div>
-            </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden">
-              <img src="https://via.placeholder.com/500x300" alt="Project 2" class="w-full">
-              <div class="p-4">
-                <h3 class="text-lg font-bold text-white mb-2">Project 2</h3>
-                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
-              </div>
-            </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden">
-              <img src="https://via.placeholder.com/500x300" alt="Project 3" class="w-full">
-              <div class="p-4">
-                <h3 class="text-lg font-bold text-white mb-2">Project 3</h3>
-                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
-              </div>
-            </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden">
-              <img src="https://via.placeholder.com/500x300" alt="Project 4" class="w-full">
-              <div class="p-4">
-                <h3 class="text-lg font-bold text-white mb-2">Project 4</h3>
-                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
-              </div>
-            </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden">
-              <img src="https://via.placeholder.com/500x300" alt="Project 5" class="w-full">
-              <div class="p-4">
-                <h3 class="text-lg font-bold text-white mb-2">Project 5</h3>
-                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
-              </div>
-            </div>
-            </section>  -->
       
       
       
 
 
-            <!-- <section class="all py-16">
+            <section class="all py-16">
               <div class="container mx-auto">
                 <h2 class="text-3xl font-bold text-white text-center mb-8" data-aos="fade-right">Some of My Work</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -273,7 +223,7 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
                       
 
@@ -427,10 +377,10 @@
 
 
 
-
+<!-- 
 <script>
   import AOS from 'aos';
   import 'aos/dist/aos.css';
   AOS.init();
 
-</script>
+</script> -->
