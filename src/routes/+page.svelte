@@ -236,6 +236,7 @@
 <section id="contact" class=" bg-[#000000]">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
     <h1 class="section-header">Get In Touch</h1>
+    <p class="pb-6 text-white text-center xl:text-[1.2rem] xl:pb-5" >Ready to take the next step? Let's work together to make something great.</p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <form id="contact-form" class="bg-[#0e0d0d] rounded-lg shadow-md p-6" role="form">
         <div class="mb-4">
@@ -500,7 +501,8 @@
 .section-header {
   text-align: center;
   margin: 0 auto;
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
   font: 300 28px 'Oswald', sans-serif;
   color: #fff;
   text-transform: uppercase;
