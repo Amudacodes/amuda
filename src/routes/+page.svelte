@@ -665,6 +665,7 @@ textarea {
   color: #555;
   letter-spacing: 1px;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 hr {
