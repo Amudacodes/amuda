@@ -225,7 +225,102 @@
   </div>
 </section>
 
+
+
+
                       
+
+
+
+
+<section id="contact" class=" bg-[#000000]">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="section-header">Get In Touch</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <form id="contact-form" class="bg-[#0e0d0d] rounded-lg shadow-md p-6" role="form">
+        <div class="mb-4">
+          <!-- <label for="name" class="block text-gray-700 font-bold mb-2">Name</label> -->
+          <input type="text" class="form-input p-[.4rem] border-white bg-transparent text-white border-[.1rem] hover:border-[#27AE60] rounded-md shadow-sm w-full" id="name" placeholder="NAME" name="name" value="" required>
+        </div>
+        <div class="mb-4">
+          <!-- <label for="email" class="block text-gray-700 font-bold mb-2">Email</label> -->
+          <input type="email" class="form-input p-[.4rem] border-white bg-transparent text-white border-[.1rem] hover:border-[#27AE60] rounded-md shadow-sm w-full" id="email" placeholder="EMAIL" name="email" value="" required>
+        </div>
+        <div class="mb-4">
+          <!-- <label for="message" class="block text-gray-700 font-bold mb-2">Message</label> -->
+          <textarea class="form-textarea rounded-md p-[.4rem] border-white bg-transparent text-white border-[.1rem] hover:border-[#27AE60] shadow-sm w-full" rows="7" cols="30" placeholder="MESSAGE" name="message" required></textarea>
+        </div>
+        <!-- <button class="w-full p-[.6rem] rounded-md shadow-sm bg-green-500 hover:bg-green-600" id="submit" type="submit" value="SEND">
+          
+            <div class="">
+            
+              <i class='bx bx-send text-[2rem]'></i>
+              <span class="send-text">SEND</span>
+            </div>
+            
+        </button> -->
+        <button class="sendbtn ">
+        <a class="sendall w-full text-center"  href="#" target="_blank">
+          <span> </span>
+          <span> </span>
+          <span> </span>
+          <span> </span>
+          SEND
+        </a>
+        </button>
+        
+      </form>
+
+
+      <!-- <i class='bx bx-name='send'></i> -->
+      <!-- <box-icon name='send' animation='fade-right' ></box-icon> -->
+      <div class="direct-contact-container ">
+  
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Abuja, Nigeria</span></i></li>
+          
+          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(234) 903-1617-656</a></span></i></li>
+          
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">amdacodes@gmail.com</a></span></i></li>
+          
+        </ul>
+
+        <hr>
+        <ul class="social-media-list">
+          <li class="bg-green-600">
+            <a href="#" target="_blank" class="contact-icon">
+            <i class='bx bxl-github' aria-hidden="true"></i></a>
+          </li>
+          <li class="bg-green-600">
+            <a href="#" target="_blank" class="contact-icon">
+            <i class='bx bxl-twitter' aria-hidden="true"></i></a>
+          </li>
+          <li class="bg-green-600">
+            <a href="#" target="_blank" class="contact-icon">
+            <i class='bx bxl-linkedin-square' aria-hidden="true"></i></a>
+          </li>
+          <li class="bg-green-600">
+            <a href="#" target="_blank" class="contact-icon">
+            <i class='bx bxl-youtube' aria-hidden="true"></i></a>
+          </li>       
+        </ul>
+        <hr>
+        <i class='bx bxl-github'></i>
+        <box-icon type='logo' name='linkedin-square'></box-icon>
+        <box-icon type='logo' name='github'></box-icon>
+        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+      </div>
+    
+  </div>
+  
+      </div>
+    
+</section>
+
+
+
+
 
 </body>
 
@@ -246,6 +341,7 @@
         
         
     }
+    
     .navBtn{
         font-size: 2rem;
     }
@@ -372,13 +468,411 @@
   transform: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contact {
+  width: 100%;
+  height: 90%;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 28px 'Oswald', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 840px;
+}
+/* 
+.form-horizontal {
+ 
+  max-width: 400px;
+  font-family: 'Lato';
+  font-weight: 400;
+}
+
+.form-control, 
+textarea {
+  max-width: 400px;
+  background-color: #000000;
+  color: #fff;
+  letter-spacing: 1px;
+} */
+
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.alt-send-button {
+  width: 400px;
+  height: 34px;
+  transition: all .2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 400px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+  color: #aaa;
+}
+
+.contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-media-list li a {
+  color: #fff;
+}
+
+.social-media-list li {
+  position: relative; 
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 40%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: #fff; 
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+  color: #000;
+}
+
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+hr {
+  border-color: rgba(255,255,255,.6);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .direct-contact-container, .form-horizontal {
+    margin: 0 auto;
+  }  
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }    
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }  
+  .form-control, textarea {
+    
+    margin: 0 auto;
+  }
+ 
+  
+  .name, .email, textarea {
+    width: 100%;
+  } 
+  
+  .direct-contact-container {
+    
+    max-width: 280px;
+  }  
+  .social-media-list {
+    left: 0;
+  }
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+  
+}
+
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sendbtn{
+  margin: 0;
+	background: #171618;
+	display: grid;
+  width: 100%;
+  
+	place-items: center;
+}
+
+.sendall {
+	position: relative;
+	padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+	color: #999;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font: 700 30px consolas;
+	overflow: hidden;
+}
+
+a span:nth-child(1) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(to right, #171618, #3bff3b);
+	animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+a span:nth-child(2) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 3px;
+	background: linear-gradient(to bottom, #171618, #3bff3b);
+	animation: animate2 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes animate2 {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(100%);
+	}
+}
+
+a span:nth-child(3) {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(to left, #171618, #3bff3b);
+	animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+a span:nth-child(4) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 3px;
+	background: linear-gradient(to top, #171618, #3bff3b);
+	animation: animate4 2s linear infinite;
+	animation-delay: 1s;
+}
+
+@keyframes animate4 {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(-100%);
+	}
+}
+
 </style>
 
 
 
 
-<!-- 
-<script>
+
+<!-- <script>
   import AOS from 'aos';
   import 'aos/dist/aos.css';
   AOS.init();
