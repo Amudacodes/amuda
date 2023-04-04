@@ -34,11 +34,11 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;">
                     <h2 class="text-[2rem] font-medium">Hi, my name is </h2>
-                    <h1 class="text-[2.5rem] font-semibold pt-1">Yusuf Adeagbo.</h1>
+                    <h1 class="text-[2.5rem]  pt-1">Yusuf Adeagbo.</h1>
                     <p class="headerText-p font-bold text-[1.2rem] pt-1 pb-3">Frontend Developer.</p>
                 </div>
                 <div class="headerBtn flex gap-2 pt-3" >
-                    <button class="headerBtn-1 font-bold border-x-emerald-50 cursor-pointer"><h2>My Resume</h2></button>
+                    <button class="text-white headerBtn-1 font-bold border-x-emerald-50 cursor-pointer"><h2>My Resume</h2></button>
                     <button style="background: linear-gradient(to right, #ffffff, #f9f9f9);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;" class="headerBtn-2 font-bold cursor-pointer"><h2>Learn More</h2></button>
@@ -49,10 +49,10 @@
 
     <div class="about">
         <div class="aboutAll all pt-20 text-center">
-            <h1 class="pb-3 text-3xl font-bold" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
+            <h1 class="pb-3 text-2xl font-bold" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;">About Me</h1>
-            <p class="p-2 pb-11 font-semibold" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
+            <p class="p-2 pb-11" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;">As a frontend developer, I'm constantly learning new technologies to improve user experiences. While I aspire to become a full-stack developer, I'm currently focused on mastering HTML, CSS, and JavaScript, along with popular frameworks like Sveltekit. I value collaboration and problem-solving and am always looking to expand my knowledge and skills. Thanks for getting to know me!</p>
         </div>
@@ -73,7 +73,7 @@
     </div> -->
 
     <div class="whatido">
-        <h2 class="all text-center text-3xl font-bold pt-[2rem]" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
+        <h2 class="all text-center text-2xl font-semibold pt-[2rem]" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;">My field of specialization</h2>
         <div class="whatidoAll all flex flex-col">
@@ -171,10 +171,10 @@
 
             <section class="all py-16">
               <div class="container mx-auto">
-                <h2 class="text-3xl font-bold text-white text-center mb-8" data-aos="fade-right">Some of My Work</h2>
+                <h2 class="text-2xl font-semibold text-white text-center mb-8" data-aos="fade-right">Some of My Work</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
-                    <img src="https://via.placeholder.com/500x300" alt="Project 1" class="w-full">
+                    <img src="/tss/t0.png" alt="Project 1" class="w-full">
                     <div class="p-4">
                       <h3 class="text-lg font-bold text-white mb-2">Project 1</h3>
                       <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -241,15 +241,15 @@
       <form id="contact-form" class="bg-[#0e0d0d] rounded-lg shadow-md p-6" role="form">
         <div class="mb-4">
           <!-- <label for="name" class="block text-gray-700 font-bold mb-2">Name</label> -->
-          <input type="text" class="form-input p-[.4rem] border-white bg-transparent text-white border-[.1rem] hover:border-[#27AE60] rounded-md shadow-sm w-full" id="name" placeholder="NAME" name="name" value="" required>
+          <input type="text" class="form-input p-[.6rem] border-white bg-transparent text-white border-[.1rem] hover:border-[#27AE60] rounded-md shadow-sm w-full" id="name" placeholder="NAME" name="name" value="" required>
         </div>
         <div class="mb-4">
           <!-- <label for="email" class="block text-gray-700 font-bold mb-2">Email</label> -->
-          <input type="email" class="form-input p-[.4rem] border-white bg-transparent text-white border-[.1rem] hover:border-[#27AE60] rounded-md shadow-sm w-full" id="email" placeholder="EMAIL" name="email" value="" required>
+          <input type="email" class="form-input p-[.6rem] border-white bg-transparent text-white border-[.1rem] hover:border-[#27AE60] rounded-md shadow-sm w-full" id="email" placeholder="EMAIL" name="email" value="" required>
         </div>
         <div class="mb-4">
           <!-- <label for="message" class="block text-gray-700 font-bold mb-2">Message</label> -->
-          <textarea class="form-textarea rounded-md p-[.4rem] border-white bg-transparent text-white border-[.1rem] hover:border-[#27AE60] shadow-sm w-full" rows="7" cols="30" placeholder="MESSAGE" name="message" required></textarea>
+          <textarea class="form-textarea rounded-md p-[.6rem] border-white bg-transparent text-white border-[.1rem] hover:border-[#27AE60] shadow-sm w-full" rows="7" cols="30" placeholder="MESSAGE" name="message" required></textarea>
         </div>
         <!-- <button class="w-full p-[.6rem] rounded-md shadow-sm bg-green-500 hover:bg-green-600" id="submit" type="submit" value="SEND">
           
@@ -261,7 +261,7 @@
             
         </button> -->
         <button class="sendbtn ">
-        <a class="sendall w-full text-center"  href="#" target="_blank">
+        <a class="sendall w-full text-center hover:text-green-600 hover:bg-white"  href="/" target="_blank">
           <span> </span>
           <span> </span>
           <span> </span>
@@ -791,7 +791,9 @@ hr {
 	font: 700 30px consolas;
 	overflow: hidden;
 }
-
+.sendall:hover{
+  color: #0ea14c;
+}
 a span:nth-child(1) {
 	position: absolute;
 	top: 0;
