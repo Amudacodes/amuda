@@ -279,15 +279,15 @@
       <form id="contact-form" class="bg-[#0e0d0d] rounded-lg shadow-md p-6" role="form">
         <div class="mb-4">
           <!-- <label for="name" class="block text-gray-700 font-bold mb-2">Name</label> -->
-          <input type="text" class="form-input p-[.6rem] border-white bg-transparent text-white border-[.1rem] hover:border-[#27AE60] rounded-md shadow-sm w-full" id="name" placeholder="NAME" name="name" value="" required>
+          <input type="text" class="form-input p-[.6rem] hover:border-white bg-transparent text-white border-[.1rem] border-[#27AE60] rounded-md shadow-sm w-full" id="name" placeholder="NAME" name="name" value="" required>
         </div>
         <div class="mb-4">
           <!-- <label for="email" class="block text-gray-700 font-bold mb-2">Email</label> -->
-          <input type="email" class="form-input p-[.6rem] border-white bg-transparent text-white border-[.1rem] hover:border-[#27AE60] rounded-md shadow-sm w-full" id="email" placeholder="EMAIL" name="email" value="" required>
+          <input type="email" class="form-input p-[.6rem] hover:border-white bg-transparent text-white border-[.1rem] border-[#27AE60] rounded-md shadow-sm w-full" id="email" placeholder="EMAIL" name="email" value="" required>
         </div>
         <div class="mb-4">
           <!-- <label for="message" class="block text-gray-700 font-bold mb-2">Message</label> -->
-          <textarea class="form-textarea rounded-md p-[.6rem] border-white bg-transparent text-white border-[.1rem] hover:border-[#27AE60] shadow-sm w-full" rows="7" cols="30" placeholder="MESSAGE" name="message" required></textarea>
+          <textarea class="form-textarea rounded-md p-[.6rem] hover:border-white bg-transparent text-white border-[.1rem] border-[#27AE60] shadow-sm w-full" rows="7" cols="30" placeholder="MESSAGE" name="message" required></textarea>
         </div>
         <!-- <button class="w-full p-[.6rem] rounded-md shadow-sm bg-green-500 hover:bg-green-600" id="submit" type="submit" value="SEND">
           
