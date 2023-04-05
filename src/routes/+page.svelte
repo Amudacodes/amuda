@@ -87,7 +87,7 @@
                     <button class="text-white headerBtn-1 font-bold border-x-emerald-50 cursor-pointer"> <a href="/resume"><h2>My Resume</h2></a></button>
                     <button style="background: linear-gradient(to right, #ffffff, #f9f9f9);
                     -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;" class="headerBtn-2 font-bold cursor-pointer"><h2>Let connect</h2></button>
+                    -webkit-text-fill-color: transparent;" class="headerBtn-2 font-bold cursor-pointer"><a href="#connect"><h2>Let connect</h2></a></button>
                 </div>
             </div>
         </div>
@@ -334,7 +334,7 @@
         </ul>
 
         <hr>
-        <ul class="social-media-list">
+        <ul id="connect" class="social-media-list">
           <a href="https://github.com/Amudacodes" target="_blank">
           <li class="bg-green-600">
             <a href="https://github.com/Amudacodes"  class="contact-icon">
@@ -1248,11 +1248,11 @@ hr {
 <script>
   import { onMount } from 'svelte';
 
-    import AOS from 'aos';
-    import 'aos/dist/aos.css';
-    window.onload = function() {
-  AOS.init();
-};
+//     import AOS from 'aos';
+//     import 'aos/dist/aos.css';
+//     window.onload = function() {
+//   AOS.init();
+// };
 
   let navClass = '';
 
