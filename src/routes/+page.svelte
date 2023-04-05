@@ -1246,7 +1246,7 @@ a span:nth-child(4) {
     }
 
 
-    let text = [    "Hi, my name is",    "Yusuf Adeagbo.",    "I am a frontend developer.",    "I specialize in creating user-friendly and visually appealing websites and web applications using technologies such as HTML, CSS, and JavaScript."];
+    let text = [    "Hi, my name is",    "Yusuf Adeagbo.",    "I am a frontend developer.",    "I create engaging user interfaces that come to life with HTML, CSS, JavaScript, and frontend frameworks. Let's bring your digital vision to life together. "];
 
     let typing = [];
     text.forEach(() => typing.push(""));
