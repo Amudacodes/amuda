@@ -255,19 +255,19 @@
             <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
               <img src="/tss/t4.png" alt="Project 5" class="w-full">
               <div class="p-4">
-                <h3 class="text-lg font-bold text-white mb-2">Project 5</h3>
-                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3 class="text-lg font-bold text-white mb-2">BasicCalc - A Simple Calculator</h3>
+                <p class="text-gray-400">BasicCalc is a simple calculator designed to perform basic arithmetic operations. The calculator is designed with a minimalistic user interface that makes it easy to use. It features all the basic operations such as addition, subtraction, multiplication, and division.</p>
                 <a href="#" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
               </div>
             </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
-              <img src="https://via.placeholder.com/500x300" alt="Project 6" class="w-full">
+            <!-- <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
+              <img src="/tss/t5.png" alt="Project 6" class="w-full">
               <div class="p-4">
                 <h3 class="text-lg font-bold text-white mb-2">Project 6</h3>
                 <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -335,22 +335,30 @@
 
         <hr>
         <ul class="social-media-list">
+          <a href="https://github.com/Amudacodes" target="_blank">
           <li class="bg-green-600">
-            <a href="https://github.com/Amudacodes" target="_blank" class="contact-icon">
+            <a href="https://github.com/Amudacodes"  class="contact-icon">
             <i class='bx bxl-github' aria-hidden="true"></i></a>
           </li>
+        </a>
+        <a href="https://twitter.com/AmudaCodes?s=20&t=QPnPLnKYq-z5qUXeyKcwQQ" target="_blank">
           <li class="bg-green-600">
             <a href="https://twitter.com/AmudaCodes?s=20&t=QPnPLnKYq-z5qUXeyKcwQQ" target="_blank" class="contact-icon">
             <i class='bx bxl-twitter' aria-hidden="true"></i></a>
           </li>
+        </a>
+          <a href="https://www.linkedin.com/in/yusuf-adeagbo-56b235263/" target="_blank">
           <li class="bg-green-600">
             <a href="https://www.linkedin.com/in/yusuf-adeagbo-56b235263/" target="_blank" class="contact-icon">
             <i class='bx bxl-linkedin-square' aria-hidden="true"></i></a>
           </li>
+        </a>
+          <a href="https://www.youtube.com/@amudacodes" target="_blank">
           <li class="bg-green-600">
             <a href="https://www.youtube.com/@amudacodes" target="_blank" class="contact-icon">
             <i class='bx bxl-youtube' aria-hidden="true"></i></a>
           </li>       
+        </a>
         </ul>
         <hr>
         <i class='bx bxl-github'></i>
