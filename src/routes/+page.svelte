@@ -37,28 +37,32 @@
           
           <li class="nav__menu1">
               <p>01.</p>
-              <a href="/about" on:click={close} bind:this={closeBtn}>About Me</a>
+              <a href="#about" on:click={close} bind:this={closeBtn}>About Me</a>
           </li>
           
           <li class="nav__menu1">
               <p>02.</p>
-              <a href="/services" on:click={close} bind:this={closeBtn}>Services</a>
+              <a href="#services" on:click={close} bind:this={closeBtn}>Services</a>
           </li>
           <li class="nav__menu1">
               <p>03.</p>
-              <a href="/contact" on:click={close} bind:this={closeBtn}>Contact</a>
+              <a href="#works" on:click={close} bind:this={closeBtn}>Works</a>
+          </li>
+          <li class="nav__menu1">
+              <p>04.</p>
+              <a href="#contact" on:click={close} bind:this={closeBtn}>Contact</a>
           </li>
           <div class="resume"><a href="/resume">Resume</a></div>
       </ul>
-      <button on:click={open} bind:this={openBtn} class="nav_btn" id="open_btn"><i class='bx bx-menu'></i></button>
-      <button on:click={close} bind:this={closeBtn} class="nav_btn" id="close_btn"><i class='bx bx-x'></i></button>
+      <button on:click={open} bind:this={openBtn} class="nav_btn lg:hidden" id="open_btn"><i class='bx bx-menu'></i></button>
+      <button on:click={close} bind:this={closeBtn} class="nav_btn lg:hidden" id="close_btn"><i class='bx bx-x'></i></button>
   </div>
   </nav>
   <div class="unknown"></div>
   
 
     <header>
-        <div class="headerAll all">
+        <div class="headerAll all ">
             <div class="headerMe pt-[3rem]">
                 <img src="/mme.png">
             </div>
@@ -71,7 +75,7 @@
                     <p class="headerText-p font-bold text-[1.2rem] pt-1 pb-3">Frontend Developer.</p>
                 </div>
                 <div class="headerBtn flex gap-2 pt-3" >
-                    <button class="text-white headerBtn-1 font-bold border-x-emerald-50 cursor-pointer"><h2>My Resume</h2></button>
+                    <button class="text-white headerBtn-1 font-bold border-x-emerald-50 cursor-pointer"> <a href="/resume"><h2>My Resume</h2></a></button>
                     <button style="background: linear-gradient(to right, #ffffff, #f9f9f9);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;" class="headerBtn-2 font-bold cursor-pointer"><h2>Learn More</h2></button>
@@ -79,7 +83,7 @@
             </div>
         </div>
     </header>
-
+    <section class="about" id="about" >
     <div class="about">
         <div class="aboutAll all pt-20 text-center">
             <h1 class="pb-3 text-2xl font-bold" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
@@ -90,6 +94,7 @@
             -webkit-text-fill-color: transparent;">As a frontend developer, I'm constantly learning new technologies to improve user experiences. While I aspire to become a full-stack developer, I'm currently focused on mastering HTML, CSS, and JavaScript, along with popular frameworks like Sveltekit. I value collaboration and problem-solving and am always looking to expand my knowledge and skills. Thanks for getting to know me!</p>
         </div>
     </div>
+  </section>
 <!-- 
     <div class="fep">
         <div class="fepAll flex all">
@@ -104,7 +109,7 @@
             </div>
         </div>
     </div> -->
-
+    <section id="services" >
     <div class="whatido">
         <h2 class="all text-center text-2xl font-semibold pt-[2rem]" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
         -webkit-background-clip: text;
@@ -140,8 +145,8 @@
                 -webkit-text-fill-color: transparent;">Design</h2>
             </div>
         </div>
-
     </div>
+    </section>
 
  
     <section class="py-8">
@@ -201,47 +206,47 @@
       
       
 
-
-            <section class="all py-16">
-              <div class="container mx-auto">
-                <h2 class="text-2xl font-semibold text-white text-center mb-8" data-aos="fade-right">Some of My Work</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
-                    <img src="/tss/t0.png" alt="Project 1" class="w-full">
-                    <div class="p-4">
-                      <h3 class="text-lg font-bold text-white mb-2">Project 1</h3>
-                      <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                      <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
-                    </div>
-                  </div>
-                  <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
-                    <img src="https://via.placeholder.com/500x300" alt="Project 2" class="w-full">
-                    <div class="p-4">
-                      <h3 class="text-lg font-bold text-white mb-2">Project 2</h3>
-                      <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                      <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
-                    </div>
-                  </div>
-                  <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
-                    <img src="https://via.placeholder.com/500x300" alt="Project 3" class="w-full">
-                    <div class="p-4">
-                      <h3 class="text-lg font-bold text-white mb-2">Project 3</h3>
-                      <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                      <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
-                    </div>
-                  </div>
-                  <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
-                    <img src="https://via.placeholder.com/500x300" alt="Project 4" class="w-full">
-                    <div class="p-4">
-                      <h3 class="text-lg font-bold text-white mb-2">Project 4</h3>
-                      <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                      <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
-                    </div>
-                  </div>
-                  <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
-                    <img src="https://via.placeholder.com/500x300" alt="Project 5" class="w-full">
-                    <div class="p-4">
-                      <h3 class="text-lg font-bold text-white mb-2">Project 5</h3>
+<section id="works">
+      <div class="all py-16">
+        <div class="container mx-auto">
+          <h2 class="text-2xl font-semibold text-white text-center mb-8" data-aos="fade-right">Some of My Work</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
+              <img src="/tss/t0.png" alt="Project 1" class="w-full">
+              <div class="p-4">
+                <h3 class="text-lg font-bold text-white mb-2">Project 1</h3>
+                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
+              </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
+              <img src="https://via.placeholder.com/500x300" alt="Project 2" class="w-full">
+              <div class="p-4">
+                <h3 class="text-lg font-bold text-white mb-2">Project 2</h3>
+                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
+              </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
+              <img src="https://via.placeholder.com/500x300" alt="Project 3" class="w-full">
+              <div class="p-4">
+                <h3 class="text-lg font-bold text-white mb-2">Project 3</h3>
+                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
+              </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
+              <img src="https://via.placeholder.com/500x300" alt="Project 4" class="w-full">
+              <div class="p-4">
+                <h3 class="text-lg font-bold text-white mb-2">Project 4</h3>
+                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
+              </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
+              <img src="https://via.placeholder.com/500x300" alt="Project 5" class="w-full">
+              <div class="p-4">
+                <h3 class="text-lg font-bold text-white mb-2">Project 5</h3>
           <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
         </div>
@@ -256,6 +261,7 @@
       </div>
     </div>
   </div>
+  </div>
 </section>
 
 
@@ -264,9 +270,8 @@
                       
 
 
-
-
-<section id="contact" class=" bg-[#000000]">
+<section id="contact">
+<div id="contact" class=" bg-[#000000]">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
     <h1 class="section-header">Get In Touch</h1>
     <p class="pb-6 text-white text-center xl:text-[1.2rem] xl:pb-5" >Ready to take the next step? Let's work together to make something great.</p>
@@ -347,9 +352,8 @@
       </div>
     
   </div>
-  
-      </div>
-    
+  </div>
+  </div>
 </section>
 
 
@@ -598,7 +602,9 @@ nav{
 
 
 
+.headerAll{
 
+}
     .headerMe img{
         border-radius: 50%;
         border: 15px solid #0e0d0d;
@@ -695,10 +701,10 @@ nav{
     color: red;
 } 
     
-@media (min-width: 640px){
+@media (min-width: 768px){
     .headerAll{
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
         padding-right: 2rem;
