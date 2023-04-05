@@ -67,14 +67,6 @@
                 <img src="/mme.png">
             </div>
             <div class="hleft">
-                <!-- <div class="headerText pt-11" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;">
-                    <h2 class="text-[2rem] font-medium">Hi, my name is </h2>
-                    <h1 class="text-[2.5rem]  pt-1">Yusuf Adeagbo.</h1>
-                    <p class="headerText-p font-bold text-[1.2rem] pt-1 pb-3">Frontend Developer.</p>
-                </div> -->
-
 
                 <div class="header_text">
                   <div>
@@ -231,9 +223,9 @@
             <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
               <img src="/tss/t0.png" alt="Project 1" class="w-full">
               <div class="p-4">
-                <h3 class="text-lg font-bold text-white mb-2">Project 1</h3>
-                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
+                <h3 class="text-lg font-bold text-white mb-2">A Medical Equiptment Website</h3>
+                <p class="text-gray-400">Prezzo is a user-friendly platform for customers to purchase a wide range of medical equipment. The website features a secure platform for safe transactions and is an excellent resource for healthcare providers and anyone in need of medical equipment.</p>
+                <a href="https://prezzo.netlify.app/" target="blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
               </div>
             </div>
             <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
@@ -745,6 +737,14 @@ nav{
         align-items: center;
         padding-right: 2rem;
         padding-left: 2rem;
+        gap: 3rem;
+    }
+    .hleft{
+      width: 50%;
+    }
+    .headerMe{
+      width: 50%;
+      display: flex;
     }
     .whatidoAll{
         display: grid;
