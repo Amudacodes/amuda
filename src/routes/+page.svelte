@@ -625,8 +625,25 @@ nav{
     padding-top: 4rem;
     padding-bottom: 10px;
     word-spacing: 5px;
-    
+    position: relative;
 }
+
+.headerMe img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  animation: slideIn 2s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 .header_name{
     color: white;
     padding-bottom: 7px;
@@ -754,6 +771,18 @@ nav{
       width: 50%;
       display: flex;
     }
+    .headerMe img {
+      animation: slideIn 4s forwards;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+}
     .whatidoAll{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
