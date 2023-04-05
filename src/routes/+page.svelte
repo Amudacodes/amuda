@@ -46,14 +46,10 @@
           </li>
           <li class="nav__menu1">
               <p>03.</p>
-              <a href="#skills" on:click={close} bind:this={closeBtn}>Skills</a>
-           </li>
-          <li class="nav__menu1">
-              <p>04.</p>
               <a href="#works" on:click={close} bind:this={closeBtn}>Works</a>
           </li>
           <li class="nav__menu1">
-              <p>05.</p>
+              <p>04.</p>
               <a href="#contact" on:click={close} bind:this={closeBtn}>Contact</a>
           </li>
           <div class="resume"><a href="/resume">Resume</a></div>
@@ -152,8 +148,8 @@
     </div>
     </section>
 
-  <section id="skills">
-    <div class="py-8">
+ 
+    <section class="py-8">
         <div class="all mx-auto">
           <h2 class="text-3xl font-bold mb-4" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
           -webkit-background-clip: text;
@@ -204,7 +200,6 @@
             
           </div>
         </div>
-        <div></div>
       </section>
        
       
