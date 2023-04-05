@@ -2,14 +2,14 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <nav>
+    <!-- <nav>
         <div class="navAll border-b-2 all flex justify-between items-center h-[4rem]">
             <div class="logo font-extrabold" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;">
                 <h2>AmudaCodes</h2>
             </div>
-            <ul class="navMenu flex gap-2 hidden" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
+            <ul bind:this={navMenu} class="navMenu" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;" >
                 <li><a href=""><h3>About Me</h3></a></li>
@@ -19,10 +19,43 @@
             <div class="navBtn cursor-pointer" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;">
-                <button><h2><i class='bx bx-menu'></i></h2></button>
+                <button on:click={open} bind:this={openBtn} class="lg:hidden"><i class='bx bx-menu'></i></button>
+                <button on:click={close} bind:this={closeBtn} class="lg:hidden"><i class='bx bx-x'></i></button>
             </div>
         </div>
-    </nav>
+    </nav> -->
+
+
+    <nav class={navClass}>
+      <div class="nav_el all">
+        <div class="log font-extrabold" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;">
+            <h2>AmudaCodes</h2>
+        </div>
+      <ul bind:this={navMenu} class="nav_menu">
+          
+          <li class="nav__menu1">
+              <p>01.</p>
+              <a href="/about" on:click={close} bind:this={closeBtn}>About Me</a>
+          </li>
+          
+          <li class="nav__menu1">
+              <p>02.</p>
+              <a href="/services" on:click={close} bind:this={closeBtn}>Services</a>
+          </li>
+          <li class="nav__menu1">
+              <p>03.</p>
+              <a href="/contact" on:click={close} bind:this={closeBtn}>Contact</a>
+          </li>
+          <div class="resume"><a href="/resume">Resume</a></div>
+      </ul>
+      <button on:click={open} bind:this={openBtn} class="nav_btn" id="open_btn"><i class='bx bx-menu'></i></button>
+      <button on:click={close} bind:this={closeBtn} class="nav_btn" id="close_btn"><i class='bx bx-x'></i></button>
+  </div>
+  </nav>
+  <div class="unknown"></div>
+  
 
     <header>
         <div class="headerAll all">
@@ -342,10 +375,230 @@
         
         
     }
+
+
+    /* .nav_menu {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 50px 10px;
+    width: min(75vw, 400px);
+    height: 100vh;
+    animation: slideInFromLeft 700ms ;
+    background-color: var(--light-navy);
+  }
+
+  @keyframes slideInFromLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+} */
     
-    .navBtn{
+    /* .navBtn{
         font-size: 2rem;
-    }
+    } */
+
+
+
+
+
+
+.window-scroll {
+  background-color: #0e0d0d;
+  box-shadow: 0 1rem 2rem rgba(5, 65, 42, 0.7);
+}
+nav{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    background-color: #0e0d0d;
+}
+.nav_el{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    
+  
+  }
+  .nav_menu {
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 50px 10px;
+    width: min(75vw, 400px);
+    height: 100vh;
+    animation: slideInFromLeft 700ms ;
+    background-color:#0e0d0d;
+  }
+
+  @keyframes slideInFromLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.nav__menu1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5.65rem;
+    animation: fadeIn 1s;
+    animation-delay: 0.8s;
+}
+.nav__menu1 p{
+    color: #27AE60;
+    padding-bottom: 5px;
+}
+.nav__menu1 a{
+    font-size: 1.3rem;
+    color: rgb(175, 165, 165);
+}
+.nav__menu1 a:hover{
+    color: white;
+}
+
+.resume{
+    align-self: center;
+    border-radius: 10px;
+    border: 1px solid #27AE60;
+    padding: 16px 3rem;
+}
+.resume a{
+    color: white;
+}
+.resume:hover{
+    border: 1px solid var(--slate);
+  }
+  .resume a:hover{
+    color: var(--slate);
+  }
+.nav_btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+  }
+  #open_btn{
+    display: flex;
+  }
+  #close_btn{
+    display: none;
+    position: fixed;
+    top: 1.8%;
+    right: 4.8%;
+    z-index: 1;
+  }
+
+  .unknown{
+  height: 5rem; 
+  background-color: #0e0d0d;
+}
+
+  @media screen and (min-width: 767px){
+
+
+    .nav_el{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    /* position: fixed; */
+  }
+  .nav_menu {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: unset;
+    top: unset;
+    bottom: unset;
+    right: 0;
+    padding: unset;
+    width: unset;
+    height: 100%;
+    animation: slideInFromLeft 800ms;
+    /* opacity: 0;
+    transition: 4ms all ease-in-out; */
+    /* box-shadow: -10px 0px 30px 15px var(--navy-shadow); */
+  }
+  .nav__menu1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: inherit;
+    gap: 10rem;
+    justify-content: center;
+  }
+  .nav__menu1 p{
+    display: none;
+  }
+  .nav__menu1 a{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+  }
+  
+  .nav__menu1 a:hover::after {
+    content: "";
+    display: inline-block;
+    border-bottom: 3px solid #27AE60;
+    width: 100%;
+    border-top: 0;
+    margin-bottom: 30px;
+}
+
+  .resume{
+    padding-left: 2rem;
+    border-radius: 10px;
+    border: 1px solid #27AE60;
+    padding: 10px 30px;
+  }
+  .resume:hover{
+    border: 1px solid white;
+  }
+  .resume a:hover{
+    color: #27AE60;
+  }
+  button nav_btn{
+    display: none;
+  }
+  #open_btn{
+    display: none;
+  }
+  .nav_btn{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
     .headerMe img{
         border-radius: 50%;
         border: 15px solid #0e0d0d;
@@ -871,15 +1124,83 @@ a span:nth-child(4) {
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* .headerText h2 {
+  animation: neon 1s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #1fa3ff, 0 0 30px #1fa3ff, 0 0 40px #1fa3ff, 0 0 50px #1fa3ff, 0 0 60px #1fa3ff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #1fa3ff, 0 0 30px #1fa3ff, 0 0 40px #1fa3ff, 0 0 50px #1fa3ff, 0 0 60px #fff;
+  }
+} */
+
+/* 
+.headerText {
+  animation-name: rainbow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+  0% { background: linear-gradient(to right, #ffffff, #f9f9f9); }
+  20% { background: linear-gradient(to right, #FF00FF, #FF8C00); }
+  40% { background: linear-gradient(to right, #FF8C00, #FFFF00); }
+  60% { background: linear-gradient(to right, #FFFF00, #00FF00); }
+  80% { background: linear-gradient(to right, #00FF00, #0000FF); }
+  100% { background: linear-gradient(to right, #0000FF, #FF00FF); }
+} */
+
+
 </style>
 
 
 
 
 
-<!-- <script>
-  import AOS from 'aos';
-  import 'aos/dist/aos.css';
-  AOS.init();
+<script>
+  import { onMount } from 'svelte';
 
-</script> -->
+    // import AOS from 'aos';
+    // import 'aos/dist/aos.css';
+    // AOS.init();
+
+  let navClass = '';
+
+  onMount(() => {
+    window.addEventListener('scroll', () => {
+      navClass = window.scrollY > 0 ? 'window-scroll' : '';
+    });
+  });
+
+    let navMenu
+    let closeBtn
+    let openBtn
+
+    function open(){
+        navMenu.style.display = "flex";
+        closeBtn.style.display = "block";
+        openBtn.style.display = "none";
+    }
+
+    function close(){
+        navMenu.style.display = "none";
+        closeBtn.style.display = "none";
+        openBtn.style.display = "block";
+    }
+
+</script>
