@@ -225,52 +225,52 @@
               <div class="p-4">
                 <h3 class="text-lg font-bold text-white mb-2">A Medical Equiptment Website</h3>
                 <p class="text-gray-400">Prezzo is a user-friendly platform for customers to purchase a wide range of medical equipment. The website features a secure platform for safe transactions and is an excellent resource for healthcare providers and anyone in need of medical equipment.</p>
-                <a href="https://prezzo.netlify.app/" target="blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
+                <a href="https://prezzo.netlify.app/" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
               </div>
             </div>
             <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
-              <img src="https://via.placeholder.com/500x300" alt="Project 2" class="w-full">
+              <img src="/tss/t1.png" alt="Project 2" class="w-full">
               <div class="p-4">
-                <h3 class="text-lg font-bold text-white mb-2">Project 2</h3>
-                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
+                <h3 class="text-lg font-bold text-white mb-2">HotCoffee Website</h3>
+                <p class="text-gray-400">HotCoffee is user-friendly, with a clean and modern layout, making it easy to navigate. The website offers customers an opportunity to explore different coffee blends and brewing methods, with a blog section featuring informative articles on coffee tips.</p>
+                <a href="#" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
               </div>
             </div>
             <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
-              <img src="https://via.placeholder.com/500x300" alt="Project 3" class="w-full">
+              <img src="/tss/t2.png" alt="Project 3" class="w-full">
               <div class="p-4">
-                <h3 class="text-lg font-bold text-white mb-2">Project 3</h3>
-                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
+                <h3 class="text-lg font-bold text-white mb-2">YCMB Educational Website</h3>
+                <p class="text-gray-400">YCMB is an educational website which provides an immersive learning experience for web design enthusiasts. The website is designed to equip learners with the skills they need to succeed in the field of web design. YCMB covers a wide range of web design concepts.</p>
+                <a href="#" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
               </div>
             </div>
             <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
-              <img src="https://via.placeholder.com/500x300" alt="Project 4" class="w-full">
+              <img src="/tss/t3.png" alt="Project 4" class="w-full">
               <div class="p-4">
-                <h3 class="text-lg font-bold text-white mb-2">Project 4</h3>
-                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
+                <h3 class="text-lg font-bold text-white mb-2">OSPOLY Alumni Website</h3>
+                <p class="text-gray-400">The OSPOLY Alumni Website connect, share ideas, and stay up to date with news and events related to their alma mater. The website is a modern design that makes it easy to navigate. It features a wide range of functionalities, including a gallery, news section, and event calendar. </p>
+                <a href="#" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
               </div>
             </div>
             <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
-              <img src="https://via.placeholder.com/500x300" alt="Project 5" class="w-full">
+              <img src="/tss/t4.png" alt="Project 5" class="w-full">
               <div class="p-4">
                 <h3 class="text-lg font-bold text-white mb-2">Project 5</h3>
-          <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
+                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
+              </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
+              <img src="https://via.placeholder.com/500x300" alt="Project 6" class="w-full">
+              <div class="p-4">
+                <h3 class="text-lg font-bold text-white mb-2">Project 6</h3>
+                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
-        <img src="https://via.placeholder.com/500x300" alt="Project 6" class="w-full">
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-white mb-2">Project 6</h3>
-          <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
 </section>
 
 
@@ -336,19 +336,19 @@
         <hr>
         <ul class="social-media-list">
           <li class="bg-green-600">
-            <a href="#" target="_blank" class="contact-icon">
+            <a href="https://github.com/Amudacodes" target="_blank" class="contact-icon">
             <i class='bx bxl-github' aria-hidden="true"></i></a>
           </li>
           <li class="bg-green-600">
-            <a href="#" target="_blank" class="contact-icon">
+            <a href="https://twitter.com/AmudaCodes?s=20&t=QPnPLnKYq-z5qUXeyKcwQQ" target="_blank" class="contact-icon">
             <i class='bx bxl-twitter' aria-hidden="true"></i></a>
           </li>
           <li class="bg-green-600">
-            <a href="#" target="_blank" class="contact-icon">
+            <a href="https://www.linkedin.com/in/yusuf-adeagbo-56b235263/" target="_blank" class="contact-icon">
             <i class='bx bxl-linkedin-square' aria-hidden="true"></i></a>
           </li>
           <li class="bg-green-600">
-            <a href="#" target="_blank" class="contact-icon">
+            <a href="https://www.youtube.com/@amudacodes" target="_blank" class="contact-icon">
             <i class='bx bxl-youtube' aria-hidden="true"></i></a>
           </li>       
         </ul>
