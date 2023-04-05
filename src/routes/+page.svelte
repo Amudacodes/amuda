@@ -637,10 +637,10 @@ nav{
 
 @keyframes slideIn {
   from {
-    transform: translateX(100%);
+    transform: translateY(-100%);
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -771,18 +771,7 @@ nav{
       width: 50%;
       display: flex;
     }
-    .headerMe img {
-      animation: slideIn 4s forwards;
-    }
-
-    @keyframes slideIn {
-      from {
-        transform: translateY(-100%);
-      }
-      to {
-        transform: translateY(0);
-      }
-}
+   
     .whatidoAll{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
