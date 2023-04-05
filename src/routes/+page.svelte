@@ -52,7 +52,7 @@
               <p>04.</p>
               <a href="#contact" on:click={close} bind:this={closeBtn}>Contact</a>
           </li>
-          <div class="resume"><a href="/resume">Resume</a></div>
+          <div class="resume "><a href="/resume">Resume</a></div>
       </ul>
       <button on:click={open} bind:this={openBtn} class="nav_btn lg:hidden" id="open_btn"><i class='bx bx-menu'></i></button>
       <button on:click={close} bind:this={closeBtn} class="nav_btn lg:hidden" id="close_btn"><i class='bx bx-x'></i></button>
@@ -87,7 +87,7 @@
                     <button class="text-white headerBtn-1 font-bold border-x-emerald-50 cursor-pointer"> <a href="/resume"><h2>My Resume</h2></a></button>
                     <button style="background: linear-gradient(to right, #ffffff, #f9f9f9);
                     -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;" class="headerBtn-2 font-bold cursor-pointer"><h2>Learn More</h2></button>
+                    -webkit-text-fill-color: transparent;" class="headerBtn-2 font-bold cursor-pointer"><h2>Let connect</h2></button>
                 </div>
             </div>
         </div>
@@ -285,18 +285,18 @@
     <h1 class="section-header">Get In Touch</h1>
     <p class="pb-6 text-white text-center xl:text-[1.2rem] xl:pb-5" >Ready to take the next step? Let's work together to make something great.</p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <form id="contact-form" class="bg-[#0e0d0d] rounded-lg shadow-md p-6" role="form">
+      <form on:submit|preventDefault={sendEmail} id="contact-form" class="bg-[#0e0d0d] rounded-lg shadow-md p-6" role="form">
         <div class="mb-4">
           <!-- <label for="name" class="block text-gray-700 font-bold mb-2">Name</label> -->
-          <input type="text" class="form-input p-[.6rem] hover:border-white bg-transparent text-white border-[.1rem] border-[#27AE60] rounded-md shadow-sm w-full" id="name" placeholder="NAME" name="name" value="" required>
+          <input type="text" bind:value={name} class="form-input p-[.6rem] hover:border-white bg-transparent text-white border-[.1rem] border-[#27AE60] rounded-md shadow-sm w-full" id="name" placeholder="NAME" name="name" required>
         </div>
         <div class="mb-4">
           <!-- <label for="email" class="block text-gray-700 font-bold mb-2">Email</label> -->
-          <input type="email" class="form-input p-[.6rem] hover:border-white bg-transparent text-white border-[.1rem] border-[#27AE60] rounded-md shadow-sm w-full" id="email" placeholder="EMAIL" name="email" value="" required>
+          <input type="email" bind:value={email} class="form-input p-[.6rem] hover:border-white bg-transparent text-white border-[.1rem] border-[#27AE60] rounded-md shadow-sm w-full" id="email" placeholder="EMAIL" name="email" required>
         </div>
         <div class="mb-4">
           <!-- <label for="message" class="block text-gray-700 font-bold mb-2">Message</label> -->
-          <textarea class="form-textarea rounded-md p-[.6rem] hover:border-white bg-transparent text-white border-[.1rem] border-[#27AE60] shadow-sm w-full" rows="7" cols="30" placeholder="MESSAGE" name="message" required></textarea>
+          <textarea bind:value={message} class="form-textarea rounded-md p-[.6rem] hover:border-white bg-transparent text-white border-[.1rem] border-[#27AE60] shadow-sm w-full" rows="7" cols="30" placeholder="MESSAGE" name="message" required></textarea>
         </div>
         <!-- <button class="w-full p-[.6rem] rounded-md shadow-sm bg-green-500 hover:bg-green-600" id="submit" type="submit" value="SEND">
           
@@ -307,15 +307,15 @@
             </div>
             
         </button> -->
-        <button class="sendbtn ">
-        <a class="sendall w-full text-center hover:text-green-600 hover:bg-white"  href="/" target="_blank">
-          <span> </span>
-          <span> </span>
-          <span> </span>
-          <span> </span>
-          SEND
-        </a>
-        </button>
+        <div class="sendbtn">
+          <button type="submit" class="sendall w-full text-center hover:text-green-600 hover:bg-white">
+            <span> </span>
+            <span> </span>
+            <span> </span>
+            <span> </span>
+            SEND
+          </button>
+        </div>
         
       </form>
 
@@ -668,6 +668,11 @@ nav{
         background-color: #27AE60;
         padding: 5px 17px;
         border: 2px solid #27AE60;
+    }
+    .headerBtn-1:hover{
+      background-color: #027e36;
+      color: #0e0d0d;
+      border: 1px solid white;
     }
     .headerBtn-2{
         background-color: transparent;
@@ -1115,7 +1120,7 @@ hr {
 .sendall:hover{
   color: #0ea14c;
 }
-a span:nth-child(1) {
+.sendall span:nth-child(1) {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -1134,7 +1139,7 @@ a span:nth-child(1) {
 	}
 }
 
-a span:nth-child(2) {
+.sendall span:nth-child(2) {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -1153,7 +1158,7 @@ a span:nth-child(2) {
 	}
 }
 
-a span:nth-child(3) {
+.sendall span:nth-child(3) {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -1172,7 +1177,7 @@ a span:nth-child(3) {
 	}
 }
 
-a span:nth-child(4) {
+.sendall span:nth-child(4) {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1289,5 +1294,48 @@ a span:nth-child(4) {
     }
 
     typeWriter(0, 0);
+
+
+
+
+
+
+
+
+
+
+  function sendEmail() {
+    const data = {
+      name,
+      email,
+      message
+    };
+    
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    };
+    
+    fetch('/send-email', options)
+      .then(response => {
+        if (response.ok) {
+          // If the email is sent successfully, redirect the user to a thank-you page
+          location.href = '/thankyou';
+        } else {
+          // If the email fails to send, display an error message
+          alert('An error occurred while sending the email.');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  }
+  
+  let name = '';
+  let email = '';
+  let message = '';
 
 </script>
