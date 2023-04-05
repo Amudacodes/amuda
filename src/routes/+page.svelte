@@ -67,13 +67,30 @@
                 <img src="/mme.png">
             </div>
             <div class="hleft">
-                <div class="headerText pt-11" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
+                <!-- <div class="headerText pt-11" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;">
                     <h2 class="text-[2rem] font-medium">Hi, my name is </h2>
                     <h1 class="text-[2.5rem]  pt-1">Yusuf Adeagbo.</h1>
                     <p class="headerText-p font-bold text-[1.2rem] pt-1 pb-3">Frontend Developer.</p>
+                </div> -->
+
+
+                <div class="header_text">
+                  <div>
+                    <p class="header_me" in:fade={{duration: 500}}>{typing[0]}</p>
+                  </div>
+                  <div>
+                    <p class="header_name" in:fade={{duration: 500}}>{typing[1]}</p>
+                  </div>
+                  <div>
+                    <p class="header_about" in:fade={{duration: 500}}>{typing[2]}</p>
+                  </div>
+                  <div>
+                    <p class="header_aboutp" in:fade={{duration: 500}}>{typing[3]}</p>
+                  </div>
                 </div>
+
                 <div class="headerBtn flex gap-2 pt-3" >
                     <button class="text-white headerBtn-1 font-bold border-x-emerald-50 cursor-pointer"> <a href="/resume"><h2>My Resume</h2></a></button>
                     <button style="background: linear-gradient(to right, #ffffff, #f9f9f9);
@@ -602,8 +619,29 @@ nav{
 
 
 
-.headerAll{
 
+.header_me{
+    color: #27AE60;
+    padding-top: 4rem;
+    padding-bottom: 10px;
+    word-spacing: 5px;
+    
+}
+.header_name{
+    color: white;
+    padding-bottom: 7px;
+    font-size: 2rem;
+}
+.header_about{
+    color: rgb(214, 216, 215);
+    padding-bottom: 7px;
+    line-height: 3rem;
+    font-size: 2.3rem;
+}
+.header_aboutp{
+    color: rgb(155, 158, 156);
+    padding-bottom: 3em;
+    font-size: 1rem;
 }
     .headerMe img{
         border-radius: 50%;
@@ -1206,5 +1244,24 @@ a span:nth-child(4) {
         closeBtn.style.display = "none";
         openBtn.style.display = "block";
     }
+
+
+    let text = [    "Hi, my name is",    "Yusuf Adeagbo.",    "I am a frontend developer.",    "I specialize in creating user-friendly and visually appealing websites and web applications using technologies such as HTML, CSS, and JavaScript."];
+
+    let typing = [];
+    text.forEach(() => typing.push(""));
+
+    function typeWriter(sentenceIndex, index) {
+      if (index < text[sentenceIndex].length) {
+        typing[sentenceIndex] += text[sentenceIndex][index];
+        setTimeout(() => typeWriter(sentenceIndex, index + 1), 100);
+      } else {
+        if (sentenceIndex + 1 < text.length) {
+          setTimeout(() => typeWriter(sentenceIndex + 1, 0), 100);
+        }
+      }
+    }
+
+    typeWriter(0, 0);
 
 </script>
