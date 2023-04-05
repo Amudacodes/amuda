@@ -559,8 +559,8 @@ nav{
     display: none;
   }
   .nav__menu1 a{
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 1rem;
   }
   
@@ -697,11 +697,9 @@ nav{
 
 
     }
-.skills-section h3{
-    color: red;
-} 
+
     
-@media (min-width: 768px){
+@media (min-width: 767px){
     .headerAll{
         display: flex;
         flex-direction: row-reverse;
