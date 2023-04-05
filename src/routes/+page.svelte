@@ -1248,9 +1248,9 @@ hr {
 <script>
   import { onMount } from 'svelte';
 
-    import AOS from 'aos';
-    import 'aos/dist/aos.css';
-    AOS.init();
+    // import AOS from 'aos';
+    // import 'aos/dist/aos.css';
+    // AOS.init();
 
   let navClass = '';
 
