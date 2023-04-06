@@ -218,7 +218,7 @@
 <section id="works">
       <div class="all py-16">
         <div class="container mx-auto">
-          <h2 class="text-2xl font-semibold text-white text-center mb-8" data-aos="fade-right">Some of My Work</h2>
+          <h2 class="text-2xl font-semibold text-white text-center mb-8 animate-card">Some of My Work</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-gray-800 rounded-lg overflow-hidden animate-article">
               <img src="/tss/t0.png" alt="Project 1" class="w-full">
@@ -285,28 +285,29 @@
     <h1 class="section-header">Get In Touch</h1>
     <p class="pb-6 text-white text-center xl:text-[1.2rem] xl:pb-5" >Ready to take the next step? Let's work together to make something great.</p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <form on:submit|preventDefault={sendEmail} id="contact-form" class="bg-[#0e0d0d] rounded-lg shadow-md p-6" role="form">
+      <form id="contact-form" action="https://formsubmit.co/amudacodes@gmail.com" method="POST" class="bg-[#0e0d0d] rounded-lg shadow-md p-6" role="form">
         <div class="mb-4">
-          <!-- <label for="name" class="block text-gray-700 font-bold mb-2">Name</label> -->
-          <input type="text" bind:value={name} class="form-input p-[.6rem] hover:border-white bg-transparent text-white border-[.1rem] border-[#27AE60] rounded-md shadow-sm w-full" id="name" placeholder="NAME" name="name" required>
+          <input type="text" class="form-input p-[.6rem] hover:border-white bg-transparent text-white border-[.1rem] border-[#27AE60] rounded-md shadow-sm w-full" id="name" placeholder="NAME" name="name" required>
         </div>
         <div class="mb-4">
-          <!-- <label for="email" class="block text-gray-700 font-bold mb-2">Email</label> -->
-          <input type="email" bind:value={email} class="form-input p-[.6rem] hover:border-white bg-transparent text-white border-[.1rem] border-[#27AE60] rounded-md shadow-sm w-full" id="email" placeholder="EMAIL" name="email" required>
+          <input type="email" class="form-input p-[.6rem] hover:border-white bg-transparent text-white border-[.1rem] border-[#27AE60] rounded-md shadow-sm w-full" id="email" placeholder="EMAIL" name="email" required>
         </div>
         <div class="mb-4">
-          <!-- <label for="message" class="block text-gray-700 font-bold mb-2">Message</label> -->
-          <textarea bind:value={message} class="form-textarea rounded-md p-[.6rem] hover:border-white bg-transparent text-white border-[.1rem] border-[#27AE60] shadow-sm w-full" rows="7" cols="30" placeholder="MESSAGE" name="message" required></textarea>
+          <label for="continent" class="block text-white mb-2">Select Your Continent</label>
+          <select id="continent" name="continent" class="form-select p-[.6rem] hover:border-white bg-[#0ba14a] text-[white] cursor-pointer border-[.1rem] border-white rounded-md shadow-sm w-full required">
+            <option value="">Choose a continent</option>
+            <option value="Asia">Asia</option>
+            <option value="Africa">Africa</option>
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
+            <option value="Europe">Europe</option>
+            <option value="Australia">Australia</option>
+            <option value="Antarctica">Antarctica</option>
+          </select>
         </div>
-        <!-- <button class="w-full p-[.6rem] rounded-md shadow-sm bg-green-500 hover:bg-green-600" id="submit" type="submit" value="SEND">
-          
-            <div class="">
-            
-              <i class='bx bx-send text-[2rem]'></i>
-              <span class="send-text">SEND</span>
-            </div>
-            
-        </button> -->
+        <div class="mb-4">
+          <textarea class="form-textarea rounded-md p-[.6rem] hover:border-white bg-transparent text-white border-[.1rem] border-[#27AE60] shadow-sm w-full" rows="7" cols="30" placeholder="MESSAGE" name="message" required></textarea>
+        </div>
         <div class="sendbtn">
           <button type="submit" class="sendall w-full text-center hover:text-green-600 hover:bg-white">
             <span> </span>
@@ -316,8 +317,8 @@
             SEND
           </button>
         </div>
-        
       </form>
+      
 
 
       <!-- <i class='bx bx-name='send'></i> -->
@@ -325,16 +326,18 @@
       <div class="direct-contact-container ">
   
         <ul class="contact-list">
-          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Abuja, Nigeria</span></i></li>
+          <li class="list-item"><span class="contact-text place">AmudaCodes</span></li>
+          <p class="list-item-p">Crafting seamless experiences with code, collaboration, and constant growth.</p>
           
-          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(234) 903-1617-656</a></span></i></li>
+          <li class="list-item"><i class='bx bxl-whatsapp phone'><span class="contact-text"><a href="tel:234-903-161-7656" title="Give me a call or Whatsapp me">(+234) 903-1617-656</a></span></i></li>
           
-          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">amdacodes@gmail.com</a></span></i></li>
+          <li class="list-item sm:pb-[2rem]"><i class='bx bxl-gmail phone'><span class="contact-text"><a href="mailto:amudacodes@gmail.com" title="Send me an email">amudacodes@gmail.com</a></span></i></li>
           
         </ul>
 
         <hr>
-        <ul id="connect" class="social-media-list">
+        
+        <ul id="connect" class="social-media-list flex items-center justify-center">
           <a href="https://github.com/Amudacodes" target="_blank">
           <li class="bg-green-600">
             <a href="https://github.com/Amudacodes"  class="contact-icon">
@@ -816,8 +819,9 @@ nav{
 
 
 
-
-
+.form-select{
+  font-family: 'Oswald', sans-serif;
+}
 
 #contact {
   width: 100%;
@@ -898,28 +902,38 @@ textarea {
 }
 
 .list-item {
-  line-height: 4;
+ padding-bottom: 1.5rem;
   color: #aaa;
+  display: flex;
+  align-items: center;
+  
 }
 
 .contact-text {
   font: 300 18px 'Lato', sans-serif;
   letter-spacing: 1.9px;
   color: #bbb;
+  padding-left: .8rem;
 }
 
 .place {
-  margin-left: 62px;
+  color: #27AE60;
 }
 
 .phone {
-  margin-left: 56px;
+  margin-left: 10px;
+  font-size: 2rem;
+  color: #27AE60;
 }
 
 .gmail {
-  margin-left: 53px;
+  margin-left: 55px;
 }
 
+.list-item-p{
+  margin-left: 10px;
+  padding-bottom: 1rem;
+}
 .contact-text a {
   color: #bbb;
   text-decoration: none;
@@ -999,7 +1013,13 @@ textarea {
 hr {
   border-color: rgba(255,255,255,.6);
 }
-
+@media screen and (min-width: 1024px) {
+  .direct-contact-container{
+    padding-left: 4rem;
+    padding-top: 6rem;
+    
+  }
+}
 /* Begin Media Queries*/
 @media screen and (max-width: 850px) {
   .contact-wrapper {
@@ -1199,7 +1219,10 @@ hr {
 
 
 
-
+.list-item-p{
+  font-style: italic;
+  color: white;
+}
 
 
 
@@ -1342,41 +1365,7 @@ hr {
 
 
 
-
-  function sendEmail() {
-    const data = {
-      name,
-      email,
-      message
-    };
     
-    const options = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    };
-    
-    fetch('/send-email', options)
-      .then(response => {
-        if (response.ok) {
-          // If the email is sent successfully, redirect the user to a thank-you page
-          location.href = '/thankyou';
-        } else {
-          // If the email fails to send, display an error message
-          alert('An error occurred while sending the email.');
-        }
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
-  }
-  
-  let name = '';
-  let email = '';
-  let message = '';
-
 
 
 
