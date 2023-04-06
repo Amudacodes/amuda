@@ -164,42 +164,42 @@
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;">Skills</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <div class="p-4 bg-white shadow-lg rounded-lg">
+            <div class="p-4 bg-white shadow-lg rounded-lg animate-card">
               <div class="flex items-center justify-center h-20 w-20 rounded-full bg-[#E44D26] ">
                 <img src="html.png" alt="HTML icon" class="h-full w-full">
               </div>
               <h3 class="text-xl font-medium text-gray-800 my-4">HTML</h3>
               <p class="text-gray-600">Proficient in writing semantic and accessible HTML code.</p>
             </div>
-            <div class="p-4 bg-white shadow-lg rounded-lg">
+            <div class="p-4 bg-white shadow-lg rounded-lg slide-card">
               <div class="flex items-center justify-center h-20 w-20 rounded-full bg-[#379AD6]">
                 <img src="css.png" alt="CSS icon" class="h-full w-full">
               </div>
               <h3 class="text-xl font-medium text-gray-800 my-4">CSS</h3>
               <p class="text-gray-600">Expertise in styling with CSS, including the use of TailwindCSS.</p>
             </div>
-            <div class="p-4 bg-white shadow-lg rounded-lg">
+            <div class="p-4 bg-white shadow-lg rounded-lg animate-card">
               <div class="flex items-center justify-center h-20 w-20 rounded-full ">
                 <img src="js2.jpg" alt="JavaScript icon" class="h-full w-full svel">
               </div>
               <h3 class="text-xl font-medium text-gray-800 my-4">JavaScript</h3>
               <p class="text-gray-600">Proficient in writing vanilla JS and working with modern frameworks.</p>
             </div>
-            <div class="p-4 bg-white shadow-lg rounded-lg">
+            <div class="p-4 bg-white shadow-lg rounded-lg slide-card">
               <div class="flex items-center justify-center h-20 w-20 rounded-full ">
                 <img src="sv.png" alt="Sveltekit icon" class="h-full w-full svel">
               </div>
               <h3 class="text-xl font-medium text-gray-800 my-4">Sveltekit</h3>
               <p class="text-gray-600">Proficient in building web applications with Sveltekit.</p>
             </div>
-            <div class="p-4 bg-white shadow-lg rounded-lg">
+            <div class="p-4 bg-white shadow-lg rounded-lg animate-card">
               <div class="flex items-center justify-center h-20 w-20 p-1 rounded-full border-[.1rem]">
                 <img src="tcss.svg" alt="TailwindCSS icon" class="h-full w-full">
               </div>
               <h3 class="text-xl font-medium text-gray-800 my-4">TailwindCSS</h3>
               <p class="text-gray-600">Expertise in using TailwindCSS to create responsive and modern designs.</p>
             </div>
-            <div class="p-4 bg-white shadow-lg rounded-lg">
+            <div class="p-4 bg-white shadow-lg rounded-lg slide-card">
                 <div class="flex items-center justify-center h-20 w-20 rounded-full ">
                   <img src="git.svg" alt="TailwindCSS icon" class="h-full w-full">
                 </div>
@@ -1252,6 +1252,30 @@ hr {
     transform: translateY(0);
   }
 
+
+
+
+  .animate-card {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-out;
+  }
+
+  .animate-card.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .slide-card {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease-out;
+  }
+
+  .slide-card.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
 </style>
 
 
@@ -1388,5 +1412,55 @@ hr {
 
   onMount(() => {
     window.addEventListener('scroll', animateArticles);
+  });
+
+
+  function animateCards() {
+    const cards = document.querySelectorAll('.animate-card');
+
+    cards.forEach(card => {
+      const cardTop = card.getBoundingClientRect().top;
+      const cardHeight = card.offsetHeight;
+      const windowHeight = window.innerHeight;
+
+      if (cardTop < windowHeight - cardHeight / 2) {
+        card.classList.add('is-visible');
+      } else {
+        card.classList.remove('is-visible');
+      }
+    });
+  }
+
+  onMount(() => {
+    window.addEventListener('scroll', animateCards);
+  });
+
+
+
+
+
+
+
+
+
+
+  function animateSlideCards() {
+    const cards = document.querySelectorAll('.slide-card');
+
+    cards.forEach(card => {
+      const cardTop = card.getBoundingClientRect().top;
+      const cardHeight = card.offsetHeight;
+      const windowHeight = window.innerHeight;
+
+      if (cardTop < windowHeight - cardHeight / 2) {
+        card.classList.add('is-visible');
+      } else {
+        card.classList.remove('is-visible');
+      }
+    });
+  }
+
+  onMount(() => {
+    window.addEventListener('scroll', animateSlideCards);
   });
 </script>
