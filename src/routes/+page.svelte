@@ -163,7 +163,7 @@
           <h2 class="text-3xl font-bold mb-4" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;">Skills</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 overflow-hidden">
             <div class="p-4 bg-white shadow-lg rounded-lg animate-card">
               <div class="flex items-center justify-center h-20 w-20 rounded-full bg-[#E44D26] ">
                 <img src="html.png" alt="HTML icon" class="h-full w-full">
