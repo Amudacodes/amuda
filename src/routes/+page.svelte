@@ -1267,7 +1267,7 @@ hr {
 .animate-article {
     opacity: 0;
     transform: translateY(50px);
-    transition: all 0.5s ease-out infinite;
+    transition: all 0.5s ease-out;
   }
 
   .animate-article.is-visible {
