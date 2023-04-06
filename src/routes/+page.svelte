@@ -220,7 +220,7 @@
         <div class="container mx-auto">
           <h2 class="text-2xl font-semibold text-white text-center mb-8" data-aos="fade-right">Some of My Work</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
+            <div class="bg-gray-800 rounded-lg overflow-hidden animate-article">
               <img src="/tss/t0.png" alt="Project 1" class="w-full">
               <div class="p-4">
                 <h3 class="text-lg font-bold text-white mb-2">A Medical Equiptment Website</h3>
@@ -228,7 +228,7 @@
                 <a href="https://prezzo.netlify.app/" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
               </div>
             </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
+            <div class="bg-gray-800 rounded-lg overflow-hidden animate-article">
               <img src="/tss/t1.png" alt="Project 2" class="w-full">
               <div class="p-4">
                 <h3 class="text-lg font-bold text-white mb-2">HotCoffee Website</h3>
@@ -236,7 +236,7 @@
                 <a href="#" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
               </div>
             </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
+            <div class="bg-gray-800 rounded-lg overflow-hidden animate-article">
               <img src="/tss/t2.png" alt="Project 3" class="w-full">
               <div class="p-4">
                 <h3 class="text-lg font-bold text-white mb-2">YCMB Educational Website</h3>
@@ -244,7 +244,7 @@
                 <a href="#" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
               </div>
             </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
+            <div class="bg-gray-800 rounded-lg overflow-hidden animate-article">
               <img src="/tss/t3.png" alt="Project 4" class="w-full">
               <div class="p-4">
                 <h3 class="text-lg font-bold text-white mb-2">OSPOLY Alumni Website</h3>
@@ -252,7 +252,7 @@
                 <a href="#" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
               </div>
             </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
+            <div class="bg-gray-800 rounded-lg overflow-hidden animate-article">
               <img src="/tss/t4.png" alt="Project 5" class="w-full">
               <div class="p-4">
                 <h3 class="text-lg font-bold text-white mb-2">BasicCalc - A Simple Calculator</h3>
@@ -1239,6 +1239,19 @@ hr {
 } */
 
 
+
+
+.animate-article {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-out infinite;
+  }
+
+  .animate-article.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 </style>
 
 
@@ -1340,4 +1353,40 @@ hr {
   let email = '';
   let message = '';
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+  function animateArticles() {
+    const articles = document.querySelectorAll('.animate-article');
+
+    articles.forEach(article => {
+      const articleTop = article.getBoundingClientRect().top;
+      const articleHeight = article.offsetHeight;
+      const windowHeight = window.innerHeight;
+
+      if (articleTop < windowHeight - articleHeight / 2) {
+        article.classList.add('is-visible');
+      } else {
+        article.classList.remove('is-visible');
+      }
+    });
+  }
+
+  onMount(() => {
+    window.addEventListener('scroll', animateArticles);
+  });
 </script>
