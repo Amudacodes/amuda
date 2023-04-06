@@ -1362,27 +1362,6 @@ hr {
 
 
 
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
   function animateArticles() {
     const articles = document.querySelectorAll('.animate-article');
 
