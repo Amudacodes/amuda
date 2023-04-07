@@ -221,7 +221,7 @@
           <h2 class="text-2xl font-semibold text-white text-center mb-8 animate-card">Some of My Work</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-gray-800 rounded-lg overflow-hidden animate-article">
-              <img src="/tss/t0.png" alt="Project 1" class="w-full">
+              <img src="/tss/t0.png" alt="Project 1" class="w-full gradient-image">
               <div class="p-4">
                 <h3 class="text-lg font-bold text-white mb-2">A Medical Equiptment Website</h3>
                 <p class="text-gray-400">Prezzo is a user-friendly platform for customers to purchase a wide range of medical equipment. The website features a secure platform for safe transactions and is an excellent resource for healthcare providers and anyone in need of medical equipment.</p>
@@ -229,7 +229,7 @@
               </div>
             </div>
             <div class="bg-gray-800 rounded-lg overflow-hidden animate-article">
-              <img src="/tss/t1.png" alt="Project 2" class="w-full">
+              <img src="/tss/t1.png" alt="Project 2" class="w-full gradient-image">
               <div class="p-4">
                 <h3 class="text-lg font-bold text-white mb-2">HotCoffee Website</h3>
                 <p class="text-gray-400">HotCoffee is user-friendly, with a clean and modern layout, making it easy to navigate. The website offers customers an opportunity to explore different coffee blends and brewing methods, with a blog section featuring informative articles on coffee tips.</p>
@@ -237,7 +237,7 @@
               </div>
             </div>
             <div class="bg-gray-800 rounded-lg overflow-hidden animate-article">
-              <img src="/tss/t2.png" alt="Project 3" class="w-full">
+              <img src="/tss/t2.png" alt="Project 3" class="w-full gradient-image">
               <div class="p-4">
                 <h3 class="text-lg font-bold text-white mb-2">YCMB Educational Website</h3>
                 <p class="text-gray-400">YCMB is an educational website which provides an immersive learning experience for web design enthusiasts. The website is designed to equip learners with the skills they need to succeed in the field of web design. YCMB covers a wide range of web design concepts.</p>
@@ -245,7 +245,7 @@
               </div>
             </div>
             <div class="bg-gray-800 rounded-lg overflow-hidden animate-article">
-              <img src="/tss/t3.png" alt="Project 4" class="w-full">
+              <img src="/tss/t3.png" alt="Project 4" class="w-full gradient-image">
               <div class="p-4">
                 <h3 class="text-lg font-bold text-white mb-2">OSPOLY Alumni Website</h3>
                 <p class="text-gray-400">The OSPOLY Alumni Website connect, share ideas, and stay up to date with news and events related to their alma mater. The website is a modern design that makes it easy to navigate. It features a wide range of functionalities, including a gallery, news section, and event calendar. </p>
@@ -253,21 +253,13 @@
               </div>
             </div>
             <div class="bg-gray-800 rounded-lg overflow-hidden animate-article">
-              <img src="/tss/t4.png" alt="Project 5" class="w-full">
+              <img src="/tss/t4.png" alt="Project 5" class="w-full gradient-image">
               <div class="p-4">
                 <h3 class="text-lg font-bold text-white mb-2">BasicCalc - A Simple Calculator</h3>
                 <p class="text-gray-400">BasicCalc is a simple calculator designed to perform basic arithmetic operations. The calculator is designed with a minimalistic user interface that makes it easy to use. It features all the basic operations such as addition, subtraction, multiplication, and division.</p>
                 <a href="#" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
               </div>
             </div>
-            <!-- <div class="bg-gray-800 rounded-lg overflow-hidden" data-aos="fade-up">
-              <img src="/tss/t5.png" alt="Project 6" class="w-full">
-              <div class="p-4">
-                <h3 class="text-lg font-bold text-white mb-2">Project 6</h3>
-                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">View project</a>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
@@ -393,43 +385,17 @@
         width: 90%;
         margin: 0 auto;
     }
-    h1, h2, h3, p {
-        
-        
-        
-        
+
+
+    .gradient-image {
+    filter: brightness(30%) grayscale(100%);
+    transition: filter 0.3s ease;
     }
 
+    .gradient-image:hover {
+        filter: brightness(100%) grayscale(0%);
+    }
 
-    /* .nav_menu {
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    padding: 50px 10px;
-    width: min(75vw, 400px);
-    height: 100vh;
-    animation: slideInFromLeft 700ms ;
-    background-color: var(--light-navy);
-  }
-
-  @keyframes slideInFromLeft {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(0); }
-}
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-} */
-    
-    /* .navBtn{
-        font-size: 2rem;
-    } */
 
 
 
@@ -1378,6 +1344,9 @@ hr {
     });
   }
 
+
+
+  
   onMount(() => {
     window.addEventListener('scroll', animateArticles);
   });
