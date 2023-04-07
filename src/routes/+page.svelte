@@ -2,30 +2,6 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <!-- <nav>
-        <div class="navAll border-b-2 all flex justify-between items-center h-[4rem]">
-            <div class="logo font-extrabold" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;">
-                <h2>AmudaCodes</h2>
-            </div>
-            <ul bind:this={navMenu} class="navMenu" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;" >
-                <li><a href=""><h3>About Me</h3></a></li>
-                <li><a href=""><h3>Services</h3></a></li>
-                <li><a href=""><h3>Contact Me</h3></a></li>
-            </ul>
-            <div class="navBtn cursor-pointer" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;">
-                <button on:click={open} bind:this={openBtn} class="lg:hidden"><i class='bx bx-menu'></i></button>
-                <button on:click={close} bind:this={closeBtn} class="lg:hidden"><i class='bx bx-x'></i></button>
-            </div>
-        </div>
-    </nav> -->
-
-
     <nav class={navClass}>
       <div class="nav_el all">
         <div class="log font-extrabold" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
@@ -52,7 +28,9 @@
               <p>04.</p>
               <a href="#contact" on:click={close} bind:this={closeBtn}>Contact</a>
           </li>
-          <div class="resume "><a href="/resume">Resume</a></div>
+          <div class="resume ">
+            <a href="/resume">Resume</a>
+          </div>
       </ul>
       <button on:click={open} bind:this={openBtn} class="nav_btn lg:hidden" id="open_btn"><i class='bx bx-menu'></i></button>
       <button on:click={close} bind:this={closeBtn} class="nav_btn lg:hidden" id="close_btn"><i class='bx bx-x'></i></button>
@@ -466,21 +444,47 @@ nav{
     color: white;
 }
 
-.resume{
-    align-self: center;
-    border-radius: 10px;
-    border: 1px solid #27AE60;
-    padding: 16px 3rem;
+.resume {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #27AE60;
+  padding: 16px 3rem;
+  background-color: #27AE60;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
 }
-.resume a{
-    color: white;
+
+.resume::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease-in-out;
 }
-.resume:hover{
-    border: 1px solid var(--slate);
-  }
-  .resume a:hover{
-    color: var(--slate);
-  }
+
+.resume:hover {
+  transform: scale(1.05);
+  background-color: #fff;
+  color: #27AE60;
+}
+
+.resume:hover::before {
+  width: 200%;
+  height: 200%;
+  opacity: 1;
+}
+
+
 .nav_btn {
     background: transparent;
     border: none;
@@ -545,19 +549,38 @@ nav{
     display: none;
   }
   .nav__menu1 a{
-    padding-left: 1rem;
-    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     font-size: 1rem;
+    position: relative;
+    text-decoration: none;
   }
-  
-  .nav__menu1 a:hover::after {
+
+.nav__menu1 a::before {
     content: "";
-    display: inline-block;
-    border-bottom: 3px solid #27AE60;
+    position: absolute;
     width: 100%;
-    border-top: 0;
-    margin-bottom: 30px;
+    
+    height: 3px;
+    top: 1.6rem;
+    bottom: 0;
+    left: 0;
+    background-color: #ccc;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
 }
+
+.nav__menu1 a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.nav__menu1 a:hover {
+    color: #27AE60;
+}
+
+
 
   .resume{
     padding-left: 2rem;
