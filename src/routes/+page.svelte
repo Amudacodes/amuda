@@ -62,12 +62,15 @@
                   </div>
                 </div>
 
-                <div class="headerBtn flex gap-2 pt-3" >
-                    <button class="text-white headerBtn-1 font-bold border-x-emerald-50 cursor-pointer"> <a href="/resume"><h2>My Resume</h2></a></button>
-                    <button style="background: linear-gradient(to right, #ffffff, #f9f9f9);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;" class="headerBtn-2 font-bold cursor-pointer"><a href="#connect"><h2>Let connect</h2></a></button>
+                <div class="flex gap-2">
+                  <button class="text-white border-[1px] bg-green-600 py-[.4rem]  px-[1rem] hover:bg-green-500">
+                    <a href="/resume">My Resume</a>
+                  </button>
+                  <button class="text-green-600 border-[1px] py-[.4rem] bg-transparent  px-[1rem] border-green-600 hover:text-white ">
+                    <a href="#connect">Let connect</a>
+                  </button>
                 </div>
+
             </div>
         </div>
     </header>
@@ -746,7 +749,7 @@ nav{
     }
 
 
-    .headerBtn button {
+    /* .headerBtn button {
       position: relative;
       overflow: hidden;
       padding: 5px 17px;
@@ -781,7 +784,7 @@ nav{
       height: 350%;
       top: -120%;
       left: -110%;
-    }
+    } */
 
 
     .svel{
@@ -1607,9 +1610,6 @@ p.footer {
       }
     });
   }
-
-
-
   
   onMount(() => {
     window.addEventListener('scroll', animateArticles);
