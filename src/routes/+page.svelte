@@ -686,80 +686,6 @@ nav{
     .svel{
         border-radius: 50%;
     }
-    
-    .circle-container {
-
-    position: relative;
-
-    width: 200px;
-
-    height: 200px;
-
-    }
-
-    .circle-outer {
-
-    position: absolute;
-
-    top: 0;
-
-    left: 0;
-
-    width: 100%;
-
-    height: 100%;
-
-    border-radius: 50%;
-
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-
-    }
-
-    .circle-middle {
-
-    position: absolute;
-
-    top: 50%;
-
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    width: 30%;
-
-    height: 30%;
-
-    border-radius: 50%;
-
-    background-color: #0e0d0d;
-
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-
-
-    }
-
-    .circle-inner {
-
-    position: absolute;
-
-    top: 50%;
-
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    width: 8%;
-
-    height: 8%;
-
-    border-radius: 50%;
-
-    background-color: #27AE60;
-
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-
-
-    }
 
     
 @media (min-width: 767px){
@@ -848,21 +774,7 @@ nav{
   position: relative;
   max-width: 840px;
 }
-/* 
-.form-horizontal {
- 
-  max-width: 400px;
-  font-family: 'Lato';
-  font-weight: 400;
-}
 
-.form-control, 
-textarea {
-  max-width: 400px;
-  background-color: #000000;
-  color: #fff;
-  letter-spacing: 1px;
-} */
 
 .send-button {
   margin-top: 15px;
@@ -1088,28 +1000,6 @@ hr {
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
