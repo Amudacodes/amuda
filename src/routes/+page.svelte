@@ -1,5 +1,6 @@
 <head>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://use.fontawesome.com/1d059b3f3e.js"></script>
 </head>
 <body>
     <nav class={navClass}>
@@ -176,8 +177,108 @@
         </div>
       </section>
        
+
+
+
+
+
+
+
+
+
+      <section class="experience">
+      <h2 class=" text-[3rem] text-green-600">My Experience</h2>
+
+      <ul class="timeline all">
+          <li>
+              <div class="timeline-badge">
+                <a><i class="fa fa-circle invert" id=""></i></a>
+              </div>
+              <div class="timeline-panel">
+                
+                  <div class="timeline-heading pt-[1rem]">
+                      <h4 class="text-green-600">Front-End Web Developer - Codeside Academy</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>As a dedicated frontend developer who honed my skills at Codeside Academy, I had the privilege of collaborating closely with seasoned professionals to create and maintain exceptional web applications. With a firm grasp of HTML, CSS, and JavaScript, I leveraged my knowledge to design and implement intuitive and responsive interfaces that delighted our clients. Through my time at Codeside Academy, I acquired valuable insights and techniques that allowed me to continuously improve and push the boundaries of what's possible in frontend development.</p>
+                       
+                  </div>
+                  <div class="timeline-footer">
+                      <p class="text-right">August 2022</p>
+                  </div>
+              </div>
+          </li>
+          
+          <li class="timeline-inverted">
+              <div class="timeline-badge">
+                  <a><i class="fa fa-circle invert" id=""></i></a>
+              </div>
+              <div class="timeline-panel">
+                  <div class="timeline-heading pt-[1rem]">
+                      <h4 class="text-green-600">Front-End Web Developement - OSPOLY</h4>
+                  </div>
+                  <div class="timeline-body">
+                      <p>Using a blend of HTML, CSS, JavaScript, Tailwind CSS, and SvelteKit, I developed and delivered interfaces that not only looked visually appealing but were also highly responsive and user-friendly. My proficiency with version control systems such as GitHub enabled me to collaborate efficiently with my team members and ensure seamless integration of our work.</p>
+                  </div>
+                  <div class="timeline-footer">
+                      <p class="text-right">APRIL 2023</p>
+                  </div>
+              </div>
+          </li>
+          
+          <li>
+              <div class="timeline-badge">
+                  <a><i class="fa fa-circle invert" id=""></i></a>
+                  <box-icon type='solid' name='square-rounded'></box-icon>
+              </div>
+              <div class="timeline-panel">
+                  <div class="timeline-heading pt-[1rem]">
+                      <h4 class="text-green-600">Front-End Web Developement - Prezzo</h4>
+                  </div>
+                  <div class="timeline-body">
+                      <p>Collaborated with seasoned professionals to create and maintain exceptional web applications using HTML, CSS, and JavaScript.</p>
       
+      <ul style="padding:0 40px">
+        <li>Designed and implemented intuitive and responsive interfaces that delighted our clients</li>
+        <li>Utilized popular front-end frameworks such as SvelteKit and TailwindCSS to create visually stunning interfaces that were not only aesthetically pleasing but also functional and easy to use</li>
+        <li>Actively participated in daily stand-up meetings and sprint planning sessions, consistently contributing ideas and insights that helped drive the team's success</li>
+      </ul>
+                  </div>
+                  <div class="timeline-footer">
+                      <p class="text-right">MARCH 2023</p>
+                  </div>
+              </div>
+          </li>
+          
+          <li class="timeline-inverted">
+              <div class="timeline-badge">
+                  <a><i class="fa fa-circle invert" id=""></i></a>
+              </div>
+              <div class="timeline-panel">
+                  <div class="timeline-heading pt-[1rem]">
+                      <h4 class="text-green-600">Front-End Web Developement - My Potfolio Website</h4>
+                  </div>
+                  <div class="timeline-body">
+                      <p>As a frontend developer, I strive to create exceptional and innovative web applications. I take pride in designing intuitive and responsive interfaces that delight users and make their experience enjoyable and seamless.</p>
       
+      <ul style="padding:0 40px">
+        <li>I focus on user experience and incorporate client feedback into my designs.</li>
+        <li>I leverage popular front-end frameworks like Sveltekit to create dynamic, scalable, and high-performance web applications.</li>
+        <li>I'm an excellent communicator and collaborator, and I strive to maintain a positive work environment. </li>
+        <li> If you're looking for a passionate and creative partner to bring your vision to life, let's talk!</li>
+      </ul>
+                  </div>
+                  <div class="timeline-footer">
+                      <p class="text-right">April 2023</p>
+                  </div>
+              </div>
+          </li>
+          <li class="clearfix no-float"></li>
+      </ul>
+
+
+
+    </section>
       
 
 <section id="works">
@@ -1189,6 +1290,245 @@ hr {
     opacity: 1;
     transform: translateX(0);
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.experience {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ij4KPHJlY3Qgd2lkdGg9IjYiIGhlaWdodD0iNiIgZmlsbD0iIzBlMGQwZCI+PC9yZWN0Pgo8ZyBpZD0iYyI+CjxyZWN0IHdpZHRoPSIzIiBoZWlnaHQ9IjMiIGZpbGw9IiMwZTBkMGQiPjwvcmVjdD4KPHJlY3QgeT0iMSIgd2lkdGg9IjMiIGhlaWdodD0iMiIgZmlsbD0iIzBlMGQwZCI+PC9yZWN0Pgo8L2c+Cjx1c2UgeGxpbms6aHJlZj0iI2NjYyIgeD0iMyIgeT0iMyI+PC91c2U+Cjwvc3ZnPg==");
+    font-family: 'Open Sans'; 
+    font-weight: 300; 
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+p.footer {
+    margin-bottom: 20px;
+    color: #999999;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* -----------------------------------------------
+ * Timeline
+ * --------------------------------------------- */
+ .timeline {
+    list-style: none;
+    padding: 10px 0;
+    position: relative;
+    font-weight: 300;
+}
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content:" ";
+    width: 2px;
+    background: #ffffff;
+    left: 50%;
+    margin-left: -1.5px;
+}
+.timeline > li {
+    margin-bottom: 20px;
+    position: relative;
+    width: 50%;
+    float: left;
+    clear: left;
+}
+.timeline > li:before, .timeline > li:after {
+    content:" ";
+    display: table;
+}
+.timeline > li:after {
+    clear: both;
+}
+.timeline > li:before, .timeline > li:after {
+    content:" ";
+    display: table;
+}
+.timeline > li:after {
+    clear: both;
+}
+.timeline > li > .timeline-panel {
+    width: calc(100% - 25px);
+    width: -moz-calc(100% - 25px);
+    width: -webkit-calc(100% - 25px);
+    float: left;
+    border: 1px solid #dcdcdc;
+    background: #ffffff;
+    position: relative;
+}
+.timeline > li > .timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #dcdcdc;
+    border-right: 0 solid #dcdcdc;
+    border-bottom: 15px solid transparent;
+    content:" ";
+}
+.timeline > li > .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #ffffff;
+    border-right: 0 solid #ffffff;
+    border-bottom: 14px solid transparent;
+    content:" ";
+}
+.timeline > li > .timeline-badge {
+    color: #ffffff;
+    width: 24px;
+    height: 24px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    right: -12px;
+    z-index: 100;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+.timeline-badge > a {
+    color: #ffffff !important;
+}
+.timeline-badge a:hover {
+    color: #dcdcdc !important;
+}
+.timeline-title {
+    margin-top: 0;
+    color: inherit;
+}
+.timeline-heading h4 {
+    font-weight: 400;
+    padding: 0 15px;
+}
+.timeline-body > p, .timeline-body > ul {
+    padding: 10px 15px;
+    margin-bottom: 0;
+}
+.timeline-footer {
+    padding: 5px 15px;
+    background-color:#f4f4f4;
+}
+.timeline-footer p { margin-bottom: 0; }
+.timeline-footer > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+.timeline > li.timeline-inverted {
+    float: right;
+    clear: right;
+}
+.timeline > li:nth-child(2) {
+    margin-top: 60px;
+}
+.timeline > li.timeline-inverted > .timeline-badge {
+    left: -12px;
+}
+.no-float {
+    float: none !important;
+}
+@media (max-width: 767px) {
+    ul.timeline:before {
+        left: 40px;
+    }
+    ul.timeline > li {
+        margin-bottom: 0px;
+        position: relative;
+        width:100%;
+        float: left;
+        clear: left;
+    }
+    ul.timeline > li > .timeline-panel {
+        width: calc(100% - 65px);
+        width: -moz-calc(100% - 65px);
+        width: -webkit-calc(100% - 65px);
+    }
+    ul.timeline > li > .timeline-badge {
+        left: 28px;
+        margin-left: 0;
+        top: 16px;
+    }
+    ul.timeline > li > .timeline-panel {
+        float: right;
+    }
+    ul.timeline > li > .timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+    ul.timeline > li > .timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+    }
+    .timeline > li.timeline-inverted {
+        float: left;
+        clear: left;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .timeline > li.timeline-inverted > .timeline-badge {
+        left: 28px;
+    }
+}
+.invert{
+  color: rgb(177, 5, 177);
+}
 </style>
 
 
@@ -1324,4 +1664,9 @@ hr {
   onMount(() => {
     window.addEventListener('scroll', animateSlideCards);
   });
+
+
+
+
+  
 </script>
