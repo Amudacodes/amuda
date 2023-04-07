@@ -656,7 +656,7 @@ nav{
         border-radius: 50%;
         border: 15px solid #0e0d0d;
     }
-    .headerBtn-1{
+    /* .headerBtn-1{
         background-color: #27AE60;
         padding: 5px 17px;
         border: 2px solid #27AE60;
@@ -670,7 +670,45 @@ nav{
         background-color: transparent;
         padding: 5px 17px;
         border: 2px solid #27AE60;
+    } */
+
+    .headerBtn button {
+      position: relative;
+      overflow: hidden;
+      padding: 5px 17px;
+      border: 2px solid #27AE60;
+      background-color: #27AE60;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
     }
+
+    .headerBtn button:before {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 120%;
+      top: -10%;
+      left: -10%;
+      background: rgba(255, 255, 255, 0.2);
+      transform: rotate(45deg);
+      z-index: -1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .headerBtn button:hover {
+      color: #fff;
+      background-color: #4CAF50;
+      border-color: #4CAF50;
+    }
+
+    .headerBtn button:hover:before {
+      width: 120%;
+      height: 350%;
+      top: -120%;
+      left: -110%;
+    }
+
 
     .svel{
         border-radius: 50%;
