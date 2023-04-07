@@ -82,20 +82,7 @@
         </div>
     </div>
   </section>
-<!-- 
-    <div class="fep">
-        <div class="fepAll flex all">
-            <div class="circle-container ">
 
-                <div class="circle-outer"></div>
-              
-                <div class="circle-middle"></div>
-              
-                <div class="circle-inner"></div>
-              
-            </div>
-        </div>
-    </div> -->
     <section id="services" >
     <div class="whatido">
         <h2 class="all text-center text-2xl font-semibold pt-[2rem]" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
@@ -656,21 +643,7 @@ nav{
         border-radius: 50%;
         border: 15px solid #0e0d0d;
     }
-    /* .headerBtn-1{
-        background-color: #27AE60;
-        padding: 5px 17px;
-        border: 2px solid #27AE60;
-    }
-    .headerBtn-1:hover{
-      background-color: #027e36;
-      color: #0e0d0d;
-      border: 1px solid white;
-    }
-    .headerBtn-2{
-        background-color: transparent;
-        padding: 5px 17px;
-        border: 2px solid #27AE60;
-    } */
+
 
     .headerBtn button {
       position: relative;
