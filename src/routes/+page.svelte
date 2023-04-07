@@ -916,7 +916,7 @@ nav{
 
 .copyright {
   font: 200 14px 'Oswald', sans-serif;
-  color: #555;
+  color: #fff;
   letter-spacing: 1px;
   text-align: center;
   padding-bottom: 2rem;
