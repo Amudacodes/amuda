@@ -203,7 +203,7 @@
                       <h4 class="text-green-600">Front-End Web Developer - Codeside Academy</h4>
                   </div>
                   <div class="timeline-body">
-                    <p>As a dedicated frontend developer who honed my skills at Codeside Academy, I had the privilege of collaborating closely with seasoned professionals to create and maintain exceptional web applications. With a firm grasp of HTML, CSS, and JavaScript, I leveraged my knowledge to design and implement intuitive and responsive interfaces that delighted our clients. Through my time at Codeside Academy, I acquired valuable insights and techniques that allowed me to continuously improve and push the boundaries of what's possible in frontend development.</p>
+                    <p>As a dedicated frontend developer who honed my skills at Codeside Academy, I had the privilege of collaborating closely with seasoned professionals to create and maintain exceptional web applications. With a firm grasp of HTML, CSS, JavaScript, and front-end frameworks like SvelteKit, I leveraged my knowledge to design and implement intuitive and responsive interfaces that delighted our clients. Through my time at Codeside Academy, I acquired valuable insights and techniques that allowed me to continuously improve and push the boundaries of what's possible in frontend development.</p>
                        
                   </div>
                   <div class="timeline-footer">
