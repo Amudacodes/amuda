@@ -203,7 +203,7 @@
                       <h4 class="text-green-600">Front-End Web Developer - Codeside Academy</h4>
                   </div>
                   <div class="timeline-body">
-                    <p>As a dedicated frontend developer who honed my skills at Codeside Academy, I had the privilege of collaborating closely with seasoned professionals to create and maintain exceptional web applications. With a firm grasp of HTML, CSS, JavaScript, and front-end frameworks like SvelteKit, I leveraged my knowledge to design and implement intuitive and responsive interfaces that delighted our clients. Through my time at Codeside Academy, I acquired valuable insights and techniques that allowed me to continuously improve and push the boundaries of what's possible in frontend development.</p>
+                    <p>As a dedicated frontend developer who honed my skills at Codeside Academy, I had the privilege of collaborating closely with seasoned professionals to create and maintain exceptional web applications. With a firm grasp of HTML, CSS, JavaScript, and front-end frameworks like SvelteKit I leveraged my knowledge to design and implement intuitive and responsive interfaces that delighted our clients. Through my time at Codeside Academy, I acquired valuable insights and techniques that allowed me to continuously improve and push the boundaries of what's possible in frontend development.</p>
                        
                   </div>
                   <div class="timeline-footer">
@@ -386,15 +386,30 @@
       <!-- <box-icon name='send' animation='fade-right' ></box-icon> -->
       <div class="direct-contact-container ">
   
-        <ul class="contact-list">
+        <!-- <ul class="contact-list">
           <li class="list-item"><span class="contact-text place">AmudaCodes</span></li>
           <p class="list-item-p">Crafting seamless experiences with code, collaboration, and constant growth.</p>
           
-          <li class="list-item"><i class='bx bxl-whatsapp phone'><span class="contact-text"><a href="tel:234-903-161-7656" title="Give me a call or Whatsapp me">(+234) 903-1617-656</a></span></i></li>
+          <li class="list-all">
+            <i class='bx bxl-whatsapp phone'></i>
+             
+                <a href="tel:234-903-161-7656" class="text-white" title="Give me a call or Whatsapp me">(+234) 903-1617-656</a>
+              
+            
+          </li>
           
           <li class="list-item sm:pb-[2rem]"><i class='bx bxl-gmail phone'><span class="contact-text"><a href="mailto:amudacodes@gmail.com" title="Send me an email">amudacodes@gmail.com</a></span></i></li>
           
-        </ul>
+        </ul> -->
+
+        
+        <ul class="contact-list">
+          <li class="list-item"><span class="contact-text name text-bg-green-600">Amuda</span></li>
+          <p class="list-item-p">Crafting seamless experiences with code, collaboration, and constant growth.</p>
+          
+          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="https://api.whatsapp.com/send?phone=2349031617656" title="Give me a call or Whatsapp me" target="_blank">(+234) 903-1617-656</a></span></i></li>
+          
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:amudacodes@gmail.com" title="Send me an email">amudacodes@gmail.com</a></span></i></li>
 
         <hr>
         
@@ -911,7 +926,7 @@ nav{
 }
 
 /* Location, Phone, Email Section */
-.contact-list {
+/* .contact-list {
   list-style-type: none;
   margin-left: -30px;
   padding-right: 20px;
@@ -950,6 +965,49 @@ nav{
   margin-left: 10px;
   padding-bottom: 1rem;
 }
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+ */
+
+
+ .contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+  color: #aaa;
+}
+
+.contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+}
+
+.name {
+  /* margin-left: 62px; */
+  color: #27AE60;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
 .contact-text a {
   color: #bbb;
   text-decoration: none;
