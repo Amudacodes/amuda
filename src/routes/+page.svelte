@@ -207,7 +207,7 @@
                        
                   </div>
                   <div class="timeline-footer">
-                      <p class="text-right">August 2022</p>
+                      <p class="text-right">AmudaCodes</p>
                   </div>
               </div>
           </li>
@@ -224,7 +224,7 @@
                       <p>Using a blend of HTML, CSS, JavaScript, Tailwind CSS, and SvelteKit, I developed and delivered interfaces that not only looked visually appealing but were also highly responsive and user-friendly. My proficiency with version control systems such as GitHub enabled me to collaborate efficiently with my team members and ensure seamless integration of our work.</p>
                   </div>
                   <div class="timeline-footer">
-                      <p class="text-right">APRIL 2023</p>
+                      <p class="text-right">AmudaCodes</p>
                   </div>
               </div>
           </li>
@@ -248,7 +248,7 @@
       </ul>
                   </div>
                   <div class="timeline-footer">
-                      <p class="text-right">MARCH 2023</p>
+                      <p class="text-right">AmudaCodes</p>
                   </div>
               </div>
           </li>
@@ -272,7 +272,7 @@
       </ul>
                   </div>
                   <div class="timeline-footer">
-                      <p class="text-right">April 2023</p>
+                      <p class="text-right">AmudaCodes</p>
                   </div>
               </div>
           </li>
