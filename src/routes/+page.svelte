@@ -4,8 +4,8 @@
 </head>
 <body>
     <nav class={navClass}>
-      <div class="nav_el all">
-        <div class="log font-extrabold" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
+      <div class="nav_el all ">
+        <div class="logo pt-[1.7rem] font-extrabold" style="background: linear-gradient(to right, #ffffff, #f9f9f9);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;">
             <h2>AmudaCodes</h2>
@@ -509,6 +509,7 @@ nav{
     position: fixed;
     width: 100%;
     height: 5rem;
+    
     background-color: #0e0d0d;
 }
 .nav_el{
@@ -1377,14 +1378,14 @@ hr {
 
 
 
-  .animate-card {
+.animate-card {
     opacity: 0;
     transform: translateX(-100%);
     transition: all 0.5s ease-out;
   }
 
   .animate-card.is-visible {
-    opacity: 1;
+    opacity: 1;  
     transform: translateX(0);
   }
 
